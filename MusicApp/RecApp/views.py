@@ -16,8 +16,8 @@ def signup(request):
             user = authenticate(email=email, password=password)
             login(request, user)
             return redirect("RecApp:dashboard")
-        else:
-            form = NewUserForm()
+    else:
+        form = NewUserForm()
     return render(request, "signup.html", {'form': form})
 
 
@@ -40,7 +40,7 @@ def signin(request):
         else:
             messages.error(request, "Invalid username or password.")
     form = AuthenticationForm()
-    return render(request=request, template_name="RecApp/login.html", context={"form": form})
+    return render(request, "login.html", {'form': form})
 
 
 @login_required
