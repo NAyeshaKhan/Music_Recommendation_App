@@ -7,20 +7,21 @@ from django.contrib import messages
 
 
 def signup(request):
-    if request.method == "POST":
+    if request.method == "GET":
+        return render(
+            request, "signup.html", {"form": NewUserForm}
+        )
+    elif request.method == "POST":
         form = NewUserForm(request.POST)
         if form.is_valid():
             user = form.save()
-            email = form.cleaned_data.get('email')
-            password = form.cleaned_data.get('password1')
-            user = authenticate(email=email, password=password)
+            #email = form.cleaned_data.get('email')
+            #password = form.cleaned_data.get('password1')
+            #user = authenticate(email=email, password=password)
             login(request, user)
             return redirect("RecApp:dashboard")
-    else:
-        form = NewUserForm()
-    return render(request, "signup.html", {'form': form})
-
-
+     
+     
 def home(request):
     return render(request, 'home.html')
 
