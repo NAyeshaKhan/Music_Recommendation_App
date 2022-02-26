@@ -10,13 +10,10 @@
 <body>
 <form action="" method="POST">
     {% csrf_token %}
-    {% for fm in form%}
-		{{fm.label_tag}}  {{fm}}  {{fm.errors| striptags}} 
-		<br></br>
-    {% endfor %}
-    <input type="submit"> value='Register'>
-	{{form.as_p}}
+    {{form.as_p}}
+    <input type="submit" value="Register">		
 </form>
+
 <script src="" async defer></script>
 </body>
 </html>
