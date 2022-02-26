@@ -28,4 +28,7 @@ class Song(models.Model):
     url = models.URLField(max_length=200)
 
     def __str__(self):
-        return self.title
+        return (
+            f"{self.title} - "
+            f"{self.artist}"
+        )
