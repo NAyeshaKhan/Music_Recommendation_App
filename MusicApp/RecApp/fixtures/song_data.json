@@ -1,0 +1,49 @@
+[
+	{
+		"model":"RecApp.Song",
+		"pk":1,
+		"fields":{
+			"title":"All Too Well",
+			"artist":"Taylor Swift",
+			"year":2021,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=sRxrwjOtIag"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":2,
+		"fields":{
+			"title":"Levitating",
+			"artist":"Dua Lipa",
+			"year":2020,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=TUVcZfQe-Kw"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":3,
+		"fields":{
+			"title":"Blinding Lights",
+			"artist":"The Weeknd",
+			"year":2020,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=4NRXx6U8ABQ"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":4,
+		"fields":{
+			"title":"Crazy",
+			"artist":"Gnarls Barkley",
+			"year":2006,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=-N4jf6rtyuw"
+		}
+	}
+]
