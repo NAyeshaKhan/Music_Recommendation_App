@@ -1,19 +1,19 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-
-class User(models.Model):
-    name = models.CharField(max_length=150)
-    age = models.IntegerField()
+class CustomUser(AbstractUser):
+    #name = models.CharField(max_length=150)
+    age = models.PositiveIntegerField(default=18)
     gender = models.CharField(max_length=20)
-    email = models.CharField(max_length=150)
-    password = models.CharField(max_length=20)
+    #email = models.CharField(max_length=150)
+    #password = models.CharField(max_length=20)
 
     def __str__(self):
-        return self.name
+        return self.username
 
 
 class Playlist(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     title = models.CharField(max_length=150)
 
     def __str__(self):
