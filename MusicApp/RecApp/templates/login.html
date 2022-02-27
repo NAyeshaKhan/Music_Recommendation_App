@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
-
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log-In</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="http://infiniteiotdevices.com/images/logo.png" rel="icon" sizes="16x16" type="image/gif" />
+	<link rel="stylesheet" type="text/css" href="login-form-5.css">
 </head>
 <body>
 <form action="" method="POST">
-    {% csrf_token %}
-    {% for form in form%}
-		{{form.label_tag}}  {{form}}  {{form.errors| striptags}} <br><br>
-    {% endfor %}
+	<div class="inputBox">
+		{% csrf_token %}
+		{% for form in form%}
+			{{form.label_tag}}  {{form}}  {{form.errors| striptags}} <br><br>
+		{% endfor %}
     <input type="submit" value="Log in">
+	</div>	
 </form>
+<h4>Create account? <a href="/signup">Sign Up</a></h4>
 <script src="" async defer></script>
 </body>
 </html>
