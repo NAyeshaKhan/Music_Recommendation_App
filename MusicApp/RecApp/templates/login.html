@@ -1,4 +1,6 @@
-{% load static %}
+{% block content %}      
+
+{% load crispy_forms_tags %}
 
 <head>
 	<meta charset="utf-8">
@@ -7,18 +9,18 @@
 	<link rel="stylesheet" type="text/css" href="login-form-5.css">
 </head>
 <body>
-<div class="inputBox">
-	<form action="" method="POST">
-			{% csrf_token %}
-			{% for form in form%}
-				{{form.label_tag}}  {{form}}  {{form.errors| striptags}} <br><br>
-			{% endfor %}
-			<input type="submit" value="Log in">
-	</form>
-			
+<div class="container py-5">
+  <h1>Login</h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{ login_form|crispy }}
+    <button class="btn btn-primary" type="submit">Login</button>
+  </form>
+  <p class="text-center">Don't have an account? <a href="/register">Create an account</a>.</p>
 </div>
-	
-<h4>Create account? <a href="/signup">Sign Up</a></h4>
-<script src="" async defer></script>
+
+{% endblock %}
+
 </body>
 </html>
+
