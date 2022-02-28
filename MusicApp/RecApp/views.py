@@ -13,7 +13,7 @@ def register_request(request):
 		if form.is_valid():
 			user = form.save()
 			login(request, user)
-			messages.success(request, "Registration successful." )
+			#messages.success(request, "Registration successful." )
 			return redirect(reverse("RecApp:dashboard"))
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = CustomUserCreationForm()
@@ -34,7 +34,7 @@ def login_request(request):
 			user = authenticate(username=username, password=password)
 			if user is not None:
 				login(request, user)
-				messages.info(request, f"You are now logged in as {username}.")
+				#messages.info(request, f"You are now logged in as {username}.")
 				return redirect(reverse("RecApp:dashboard"))
 			else:
 				messages.error(request,"Invalid username or password.")
@@ -45,7 +45,7 @@ def login_request(request):
 
 def logout_request(request):
 	logout(request)
-	messages.info(request, "You have successfully logged out.") 
+	#messages.info(request, "You have successfully logged out.") 
 	return redirect("RecApp:home")
 
 
