@@ -1,15 +1,15 @@
 {% block content %}      
-
+{% load static %}
 {% load crispy_forms_tags %}
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Log-In</title>
-	<link rel="stylesheet" type="text/css" href="login-form-5.css">
+	<link rel="stylesheet" href="{% static 'login.css' %}">
 </head>
 <body>
-<div class="container py-5">
+<div class="center">
   <h1>Login</h1>
   <form method="POST">
     {% csrf_token %}

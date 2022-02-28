@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +8,7 @@
 	<title>Input From UI Design</title>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="http://infiniteiotdevices.com/images/logo.png" rel="icon" sizes="16x16" type="image/gif" />
-	<link rel="stylesheet" type="text/css" href="login-form-5.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'login-form-5.css' %}">
 </head>
 <body>
 	<div class="box">
@@ -24,26 +26,7 @@
 		</form>
 		<a href="#" class="a">Forget Password</a>
 		<h5>Sign Up Using</h5>
-		<ul>
-			<li>
-			<a href="#">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<i class="fa fa-facebook"></i>
-			</a>
-		</li>
-		<li>
-			<a href="#">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-				<i class="fa fa-google"></i>
-			</a>
-		</li>
-		</ul>
+
 		<h4>Create account? <a href="#">Sign Up</a></h4>
 	</div>
 </body>
