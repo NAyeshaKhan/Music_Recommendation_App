@@ -1,9 +1,12 @@
 from django.urls import path
-from RecApp import views
+from . import views
+
+app_name = "RecApp"
 
 urlpatterns = [
     path('', views.home, name="home"),
-    path('signup/', views.signup, name='signup'),
-    path('signin/', views.signin, name='signin'),
+    path("register", views.register_request, name="register"),
+    path("login", views.login_request, name="login"),
+    #path("logout", views.logout_request, name= "logout"),
     path('dashboard/', views.dashboard, name='dashboard')
 ]
