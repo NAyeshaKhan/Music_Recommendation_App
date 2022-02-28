@@ -1,4 +1,4 @@
-[
+[	
 	{
 		"model":"RecApp.Song",
 		"pk":1,
@@ -51,11 +51,11 @@
 		"model":"RecApp.Song",
 		"pk":5,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Lean On",
+			"artist":"MØ ",
+			"year":2015,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=rn9AQoI7mYU"
 		}
 	},
 	
@@ -63,11 +63,11 @@
 		"model":"RecApp.Song",
 		"pk":6,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Get Lucky",
+			"artist":"Daft Punk",
+			"year":2013,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=CCHdMIEGaaM"
 		}
 	},
 	
@@ -75,11 +75,11 @@
 		"model":"RecApp.Song",
 		"pk":7,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Titanium",
+			"artist":"David Guetta",
+			"year":2011,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=JRfuAukYTKg"
 		}
 	},
 	
@@ -87,11 +87,11 @@
 		"model":"RecApp.Song",
 		"pk":8,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Catch Me If You Can",
+			"artist":"Girls Generation",
+			"year":2015,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=NfzYlgO30do"
 		}
 	},
 	
@@ -99,11 +99,11 @@
 		"model":"RecApp.Song",
 		"pk":9,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
+			"title":"Immigrant Song",
+			"artist":"Led Zeppelin",
+			"year":1970,
 			"genre":"Rock",
-			"url":""
+			"url":"https://www.youtube.com/watch?v=RlNhD0oS5pk"
 		}
 	},
 	
@@ -111,11 +111,11 @@
 		"model":"RecApp.Song",
 		"pk":10,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
+			"title":"Bohemian Rhapsody",
+			"artist":"Queen",
+			"year":1975,
 			"genre":"Rock",
-			"url":""
+			"url":"https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
 		}
 	},
 	
@@ -123,11 +123,11 @@
 		"model":"RecApp.Song",
 		"pk":11,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
+			"title":"Don't Stop Believin'",
+			"artist":"Journey",
+			"year":1981,
 			"genre":"Rock",
-			"url":""
+			"url":"https://www.youtube.com/watch?v=1k8craCGpgs"
 		}
 	},
 	
@@ -135,11 +135,11 @@
 		"model":"RecApp.Song",
 		"pk":12,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
+			"title":"(Don't Fear) The Reaper",
+			"artist":"Blue Oyster Cult",
+			"year":1976,
 			"genre":"Rock",
-			"url":""
+			"url":"https://www.youtube.com/watch?v=Dy4HA3vUv2c"
 		}
 	},
 	
@@ -147,11 +147,11 @@
 		"model":"RecApp.Song",
 		"pk":13,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"I Walk the Line",
+			"artist":"Johnny Cash",
+			"year":1957,
+			"genre":"Country",
+			"url":"https://www.youtube.com/watch?v=jh169rVMveA"
 		}
 	},
 	
@@ -159,11 +159,11 @@
 		"model":"RecApp.Song",
 		"pk":14,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Jolene",
+			"artist":"Dolly Parton",
+			"year":1974,
+			"genre":"Country",
+			"url":"https://www.youtube.com/watch?v=Ixrje2rXLMA"
 		}
 	},
 	
@@ -171,11 +171,11 @@
 		"model":"RecApp.Song",
 		"pk":15,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"9 to 5",
+			"artist":"Dolly Parton",
+			"year":1980,
+			"genre":"Country",
+			"url":"https://www.youtube.com/watch?v=UbxUSsFXYo4"
 		}
 	},
 	
@@ -183,11 +183,11 @@
 		"model":"RecApp.Song",
 		"pk":16,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Before He Cheats",
+			"artist":"Carrie Underwood",
+			"year":2005,
+			"genre":"Country",
+			"url":"https://www.youtube.com/watch?v=WaSy8yy-mr8"
 		}
 	},
 	
@@ -195,11 +195,11 @@
 		"model":"RecApp.Song",
 		"pk":17,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Nice For What",
+			"artist":"Drake",
+			"year":2018,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=U9BwWKXjVaI"
 		}
 	},
 	
@@ -207,11 +207,11 @@
 		"model":"RecApp.Song",
 		"pk":18,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Lost Ones",
+			"artist":"Lauryn Hill",
+			"year":1998,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=NdNFFC0p7N4"
 		}
 	},
 	
@@ -219,11 +219,11 @@
 		"model":"RecApp.Song",
 		"pk":19,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Stan",
+			"artist":"Eminem",
+			"year":2000,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=kt14c7sYTFA"
 		}
 	},
 	
@@ -231,11 +231,71 @@
 		"model":"RecApp.Song",
 		"pk":20,
 		"fields":{
-			"title":"",
-			"artist":"",
-			"year":2006,
-			"genre":"Rock",
-			"url":""
+			"title":"Humble",
+			"artist":"Kendrick Lamar",
+			"year":2017,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=tvTRZJ-4EyI"
 		}
 	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":21,
+		"fields":{
+			"title":"Video Games",
+			"artist":"Lana Del Rey",
+			"year":2011,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=Yu9V3Phfsf8"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":22,
+		"fields":{
+			"title":"Pumped Up Kicks",
+			"artist":"Foster The People",
+			"year":2010,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=SDTZ7iX4vTQ"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":23,
+		"fields":{
+			"title":"Every Time the Sun Comes Up",
+			"artist":"Sharon Van Etten",
+			"year":2014,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=fDW-W2J84Hc"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":24,
+		"fields":{
+			"title":"Washing Machine Heart",
+			"artist":"Mitski",
+			"year":2018,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=3vjkh-acmTE"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":25,
+		"fields":{
+			"title":"I'd Rather Go Blind",
+			"artist":"Etta James",
+			"year":1968,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ"
+		}
+	}
 ]
