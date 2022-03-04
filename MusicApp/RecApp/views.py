@@ -56,7 +56,4 @@ def dashboard(request):
 
 
 def playlist_read(request):
-    playlist={}
-    playlist["data"]=Playlist.objects.filter(user=request.user)
-    
-    return render(request, 'playlist_read.html', playlist)
+    return render(request, 'playlist_read.html')

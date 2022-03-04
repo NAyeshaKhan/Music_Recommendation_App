@@ -10,7 +10,7 @@ class CustomUser(AbstractUser):
 
 
 class Playlist(models.Model):
-    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="playlist", null=True)
     title = models.CharField(max_length=150)
 
     def __str__(self):
