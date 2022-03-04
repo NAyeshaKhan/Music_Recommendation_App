@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
+from .models import CustomUser, Playlist  
 
 
 def register_request(request):
@@ -52,3 +53,10 @@ def logout_request(request):
 @login_required
 def dashboard(request):
     return render(request, 'dashboard.html')
+
+
+def playlist_read(request):
+    playlist={}
+    playlist["data"]=Playlist.objects.filter(user=request.user)
+    
+    return render(request, 'playlist_read.html', playlist)
