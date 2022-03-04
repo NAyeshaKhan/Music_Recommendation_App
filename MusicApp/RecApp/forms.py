@@ -11,7 +11,6 @@ class CustomUserCreationForm(UserCreationForm):
     #class Meta(UserCreationForm.Meta):
         model=CustomUser
         #keeps additional information about the form and extends UserCreationForm
-        #fields = UserCreationForm.Meta.fields + ("email","age","gender",)
         fields = ("username", "email", "age", "gender", "password1", "password2")
 
     def save(self, commit=True):
@@ -21,6 +20,4 @@ class CustomUserCreationForm(UserCreationForm):
         user.gender = self.cleaned_data['gender']
         if commit:
             user.save()
-        return user        
-      
-      
+        return user              
