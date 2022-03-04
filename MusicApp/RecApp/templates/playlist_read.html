@@ -1,5 +1,11 @@
-<div class="content">
-	<p>Hoela</p>
-	{% for pl in playlist %}
-		<p> {{pl.title}} </p>
-    {% endfor %}
+{% extends 'base.html' %}
+
+{% block content %}
+	<h3 class="mt-4">{{ user.username }}'s playlists:</h3>
+        <ul>
+		{% for pl in user.playlist.all %}
+			<li class="breadcrumb mb-4">{{pl.title}}<br></br></li>
+        {% endfor %}
+        </ul>
+	
+{% endblock content %}
