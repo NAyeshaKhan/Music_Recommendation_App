@@ -1,3 +1,9 @@
+import numpy as np
+import pandas as pd
+from .apps import *
+from rest_framework.views import APIView
+from rest_framework.response import Response
+
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from .forms import CustomUserCreationForm
@@ -6,6 +12,21 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 from .models import CustomUser, Playlist  
+
+
+class Prediction(APIView):
+    def post(self, request):
+        #data = request.data
+        age= request.GET.get('Age')
+        gender = request.GET.get('Gender')
+        mood = request.GET.get('Mood')
+        dtree = ApiConfig.model
+        
+        #predict using independent variables
+        PredictionMade = dtree.predict([[age, gender, mood]])
+        response_dict = {"Recommended Genre": PredictionMade}
+        print(response_dict)
+        return Response(response_dict, status=200)
 
 
 def register_request(request):

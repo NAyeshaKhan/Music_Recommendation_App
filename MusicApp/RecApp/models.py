@@ -1,9 +1,11 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+GENDER_CHOICES = ((0,'Male'),(1, 'Female') )
+
 class CustomUser(AbstractUser):
     age = models.PositiveIntegerField(default=18)
-    gender = models.CharField(max_length=20)
+    gender = models.CharField(max_length=6, choices=GENDER_CHOICES)
     
     def __str__(self):
         return self.username
