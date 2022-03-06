@@ -1,11 +1,20 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-	<h3 class="mt-4">{{ user.username }}'s playlists:</h3>
-        <ul>
-		{% for pl in user.playlist.all %}
-			<li class="breadcrumb mb-4">{{pl.title}}<br></br></li>
-        {% endfor %}
-        </ul>
-	
+<head>
+	<link href="{% static 'css/playlist_hover.css' %}" rel="stylesheet" />
+</head>	
+<body>
+<div class="container">
+    <div class="row col-6">
+        <span>
+			{% for pl in user.playlist.all %}
+				<li><span>{{pl.title}}</span></li>
+			{% endfor %}
+		</span>
+	</div>
+</div>	
+</body>	
 {% endblock content %}
+
+
