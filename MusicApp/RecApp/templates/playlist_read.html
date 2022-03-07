@@ -7,6 +7,9 @@
 </head>	
 <body>
 	<div class="column">
+		<div class="media-content">
+			<span class="title is-5">Your Playlists:</span>
+		</div>
 		{% for pl in user.playlist.all %}
 			<div class="block">
 			  <div class="card">
@@ -17,7 +20,7 @@
 							<img src="https://img.icons8.com/material/24/000000/playlist.png"/>
 						</div>
 						<div class="media-content">
-							<span class="title is-4">{{ pl.title }}</span>
+							<span class="title is-5">{{ pl.title }}</span>
 						</div>
 					</div>
 				  </div>
