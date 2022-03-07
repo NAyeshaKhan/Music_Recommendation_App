@@ -1,19 +1,31 @@
 {% extends 'base.html' %}
-{% load static %}
+
 {% block content %}
 <head>
-	<link href="{% static 'css/playlist_hover.css' %}" rel="stylesheet" />
+	<link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>	
 <body>
-<div class="container">
-    <div class="row col-6">
-        <span>
-			{% for pl in user.playlist.all %}
-				<li><span>{{pl.title}}</span></li>
-			{% endfor %}
-		</span>
+	<div class="column">
+		{% for pl in user.playlist.all %}
+			<div class="block">
+			  <div class="card">
+				<a href="#">
+				  <div class="card-content">
+					<div class="media">
+						<div class="media-left">
+							<img src="https://img.icons8.com/material/24/000000/playlist.png"/>
+						</div>
+						<div class="media-content">
+							<span class="title is-4">{{ pl.title }}</span>
+						</div>
+					</div>
+				  </div>
+				</a>
+			  </div>
+			</div>
+		{% endfor %}
 	</div>
-</div>	
 </body>	
 {% endblock content %}
 
