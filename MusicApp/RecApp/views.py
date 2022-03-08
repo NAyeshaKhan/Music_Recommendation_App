@@ -6,7 +6,7 @@ from rest_framework.response import Response
 
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from .forms import CustomUserCreationForm
+from .forms import CustomUserCreationForm , PlaylistCreateForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
@@ -78,3 +78,20 @@ def dashboard(request):
 
 def playlist_read(request):
     return render(request, 'playlist_read.html')
+
+def playlist_create(request):
+	if request.method == "GET":
+		form = PlaylistCreateForm()
+		return render(request,'playlist_create.html',{'form':form})
+	else:
+		form = PlaylistCreateForm(request.POST)
+		if form.is_valid():
+			playlist=form.save(commit=False)
+			playlist.user = request.user
+			playlist.save()
+			return redirect('/playlist')
+
+def playlist_delete(request,id):
+	playlist = Playlist.objects.get(pk=id)
+	playlist.delete()
+	return redirect('/playlist')

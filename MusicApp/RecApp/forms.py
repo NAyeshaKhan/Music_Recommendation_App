@@ -1,6 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from .models import CustomUser
+from .models import Playlist
 
 
 # Create your forms here.
@@ -21,3 +22,15 @@ class CustomUserCreationForm(UserCreationForm):
         if commit:
             user.save()
         return user              
+
+class PlaylistCreateForm(forms.ModelForm):
+
+    class Meta:
+        model = Playlist
+        fields = ('title',)
+        labels = {'title':'Playlist Name'}
+    
+    def __init__(self, *args, **kwargs):
+        super(PlaylistCreateForm,self).__init__(*args, **kwargs)
+        self.fields['title'].required= False
+        self.fields
