@@ -6,6 +6,8 @@ from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 from .models import CustomUser, Playlist, Song  
+from django.views.generic import ListView
+from django.db.models import Q
 
 from .forms import PredictionForm 
 from rest_framework import viewsets 
