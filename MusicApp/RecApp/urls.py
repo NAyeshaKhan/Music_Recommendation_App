@@ -15,6 +15,7 @@ urlpatterns = [
     path('add_playlist/', views.playlist_create, name='playlist_create'),
     path('delete/<int:id>/', views.playlist_delete,name='playlist_delete'),
     path('api/', include(router.urls)),
-    path('form/', views.FormView, name='form'),    
+    path('form/', views.FormView, name='form'),  
+    path('search/', SearchResultsView.as_view(), name='search')
     
 ]
