@@ -1,8 +1,10 @@
-from django.urls import path
+from django.contrib import admin
+from django.urls import path,include
 from . import views
+from rest_framework import routers
 
 app_name = "RecApp"
-
+router = routers.DefaultRouter()
 urlpatterns = [
     path('', views.home, name="home"),
     path("register/", views.register_request, name="register"),
@@ -12,4 +14,5 @@ urlpatterns = [
     path('playlist/', views.playlist_read, name='playlist_read'),
     path('createplaylist/', views.playlist_create, name='playlist_create'),
     path('delete/<int:id>/', views.playlist_delete,name='playlist_delete')    
+    
 ]
