@@ -2,17 +2,40 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid px-4">
-    <h1 class="mt-4">Search Results:</h1>
-
-  {% for Song in object_list %}
-
-     Song Name: {{ Song.title }}  | Artist: {{ Song.artist }}  | Genre: {{ Song.genre }}  | URL: {{ Song.url }}
-    <br>
-    <br>
-  {% endfor %}
-<p class="text-center"> <a href="/dashboard">Back to Dashboard</a></p>
-    </div>
-
-
+<head>
+	<link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>	
+<body>
+	<div class="column">
+		<div class="media-content">
+			<span class="title is-5">Search Results:</span>
+		</div>
+		{% for s in object_list %}
+			<div class="block">
+				 <div class="card">
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<figure class="image is-48x48">
+								  <img src="https://img.icons8.com/material/48/000000/musical-notes--v1.png"/>
+								</figure>
+							</div>
+							<div class="media-content">
+								<span class="title is-6">{{ s.title }}</span>
+								<div class="media-content">
+									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+			
+	</div>
+</body>	
 {% endblock content %}
+
+
