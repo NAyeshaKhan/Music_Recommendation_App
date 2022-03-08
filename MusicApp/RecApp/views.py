@@ -121,3 +121,20 @@ def playlist_delete(request,id):
 	playlist = Playlist.objects.get(pk=id)
 	playlist.delete()
 	return redirect('/playlist')
+
+class SearchResultsView(ListView):
+    model = Song
+    template_name = 'search.html'
+
+    def get_queryset(self):
+        result = super(SearchResultsView, self).get_queryset()
+        query = self.request.GET.get('q')
+        if query:
+            object_list = Song.objects.filter(
+                Q(title__icontains=query) | Q(genre__icontains=query) | Q(artist__icontains=query) | Q(
+                    year__icontains=query))
+            result = object_list
+        else:
+            result = None
+        return result
+
