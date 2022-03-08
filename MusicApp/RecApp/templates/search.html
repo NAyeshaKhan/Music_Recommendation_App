@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Search Results:</h1>
+
+  {% for Song in object_list %}
+
+     Song Name: {{ Song.title }}  | Artist: {{ Song.artist }}  | Genre: {{ Song.genre }}  | URL: {{ Song.url }}
+    <br>
+    <br>
+  {% endfor %}
+<p class="text-center"> <a href="/dashboard">Back to Dashboard</a></p>
+    </div>
+
+
+{% endblock content %}
