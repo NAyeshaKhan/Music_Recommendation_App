@@ -1,13 +1,34 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Status</title>
-</head>
+	<link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>	
 <body>
-    <h2>Buying Status: {{data}}</h2>
-</body>
-</html>
+	<div class="column">
+		<div class="media-content">
+			<span class="title is-5">Recommended Genre: {{genre}}</span>
+		</div>
+		{% for r in rec %}
+			<div class="block">
+				<div class="card">
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://img.icons8.com/material/24/000000/playlist.png"/>
+							</div>
+							<div class="media-content">
+								<span class="title is-5">{{ r.title }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	
+</body>	
+{% endblock content %}
+
+

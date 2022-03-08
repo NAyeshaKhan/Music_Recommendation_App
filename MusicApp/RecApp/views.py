@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
-from .models import CustomUser, Playlist  
+from .models import CustomUser, Playlist, Song  
 
 from .forms import PredictionForm 
 from rest_framework import viewsets 
@@ -26,6 +26,33 @@ import numpy as np
 from sklearn import preprocessing 
 import pandas as pd 
 
+class CustomerUserView(viewsets.ModelViewSet): 
+    queryset = CustomUser.objects.all() 
+    serializer_class = CustomUserSerializers 
+
+def status(df):
+    with open('C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.sav' , 'rb') as f:
+        model = pickle.load(f)
+    X = df 
+    y_pred = model.predict(X) 
+    return y_pred
+    
+def FormView(request):
+    if request.method=='POST':
+        form=PredictionForm(request.POST or None)
+
+        if form.is_valid():
+            Age = form.cleaned_data['age']
+            Gender = form.cleaned_data['gender']
+            Mood = form.cleaned_data['mood']
+            df=pd.DataFrame({'gender':[Gender], 'age':[Age], 'mood':[Mood]})
+            df["gender"] = 1 if "Female" else 0
+            result = status(df)
+            songs= Song.objects.filter(genre=result)
+            return render(request, 'status.html', {"genre": result,"rec":songs}) 
+            
+    form=PredictionForm()
+    return render(request, 'form.html', {'form':form})
 
 
 def register_request(request):
