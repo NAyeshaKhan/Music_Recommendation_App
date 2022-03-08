@@ -13,6 +13,6 @@ urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('playlist/', views.playlist_read, name='playlist_read'),
     path('add_playlist/', views.playlist_create, name='playlist_create'),
-    path('delete/<int:id>/', views.playlist_delete,name='playlist_delete')    
+    path('delete/<int:id>/', views.playlist_delete,name='playlist_delete'),  
     
 ]
