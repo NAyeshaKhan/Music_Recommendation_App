@@ -21,3 +21,12 @@ class CustomUserCreationForm(UserCreationForm):
         if commit:
             user.save()
         return user              
+        
+class PredictionForm(forms.ModelForm):
+    class Meta:
+              model = CustomUser
+              fields = ("age", "gender")
+
+    age = forms.IntegerField()
+    gender = forms.TypedChoiceField(choices=[('Male', 'Male'), ('Female', 'Female')])
+    mood = forms.TypedChoiceField(choices=[(1,'Happy'), (2,'Gloomy'), (3,'Stressed'), (4,'Relaxing'), (5,'Energetic')])

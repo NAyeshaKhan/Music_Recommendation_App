@@ -1,5 +1,6 @@
 import os
-import joblib
+import pandas as pd
+from joblib import load
 from django.apps import AppConfig
 from django.conf import settings
 
