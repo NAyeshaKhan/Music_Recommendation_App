@@ -6,6 +6,7 @@ from .views import SearchResultsView
 
 app_name = "RecApp"
 router = routers.DefaultRouter()
+router.register('RecApp',views.CustomUserView)
 urlpatterns = [
     path('', views.home, name="home"),
     path("register/", views.register_request, name="register"),
@@ -15,8 +16,8 @@ urlpatterns = [
     path('playlist/', views.playlist_read, name='playlist_read'),
     path('add_playlist/', views.playlist_create, name='playlist_create'),
     path('delete/<int:id>/', views.playlist_delete,name='playlist_delete'),
+    path('search/', SearchResultsView.as_view(), name='search'),
+    path('form/', views.myform, name='myform'),
     path('api/', include(router.urls)),
-    path('form/', views.FormView, name='form'),  
-    path('search/', SearchResultsView.as_view(), name='search')
-    
+    path('status/', views.predict)
 ]

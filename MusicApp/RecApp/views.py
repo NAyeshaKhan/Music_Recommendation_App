@@ -28,35 +28,38 @@ import numpy as np
 from sklearn import preprocessing 
 import pandas as pd 
 
-class CustomerUserView(viewsets.ModelViewSet): 
+class CustomUserView(viewsets.ModelViewSet): 
     queryset = CustomUser.objects.all() 
     serializer_class = CustomUserSerializers 
-
-def status(df):
-    with open('C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.sav' , 'rb') as f:
-        model = pickle.load(f)
-    X = df 
-    y_pred = model.predict(X) 
-    return y_pred
-    
-def FormView(request):
-    if request.method=='POST':
+   
+def myform(request):
+    if  request.method=='POST':
         form=PredictionForm(request.POST or None)
-
         if form.is_valid():
-            Age = form.cleaned_data['age']
-            Gender = form.cleaned_data['gender']
-            Mood = form.cleaned_data['mood']
-            df=pd.DataFrame({'gender':[Gender], 'age':[Age], 'mood':[Mood]})
-            df["gender"] = 1 if "Female" else 0
-            result = status(df)
-            songs= Song.objects.filter(genre=result)
-            return render(request, 'status.html', {"genre": result,"rec":songs}) 
+            myform=form.save(commit=False)
             
     form=PredictionForm()
-    return render(request, 'form.html', {'form':form})
+    #return render(request, 'form.html', {'form':form})
 
-
+@api_view(['POST', 'GET'])
+def predict(request):
+    try:
+        mdl=joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
+        #predict using independent variables
+        mydata=request.data
+        X=np.array(list(mydata.values()))
+        X=X.reshape(1,-1)
+        #X=pd.DataFrame({'gender':[gender], 'age':[age], 'mood':[mood]})
+        #pd.DataFrame(X).fillna()
+        X=[[21,1,1],[22,0,4],[29,0,5],[31,0,4],[55,1,4]]
+        y_pred=mdl.predict(X)
+        newdf=pd.DataFrame(y_pred,columns=['Genre'])
+        
+        return JsonResponse('Recommended genre is {}:'.format(newdf),safe=False)
+    except ValueError as e:
+        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
+      
+        
 def register_request(request):
 	if request.method == "POST":
 		form = CustomUserCreationForm(request.POST)
