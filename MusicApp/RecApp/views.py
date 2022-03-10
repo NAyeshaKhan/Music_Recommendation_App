@@ -43,22 +43,17 @@ def myform(request):
 
 @api_view(['POST', 'GET'])
 def predict(request):
-    try:
-        mdl=joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
+    data = request.query_params
+    age= data.get('age')
+    gender = data.get('gender')
+    mood = data.get('mood')
+    dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
         #predict using independent variables
-        mydata=request.data
-        X=np.array(list(mydata.values()))
-        X=X.reshape(1,-1)
-        #X=pd.DataFrame({'gender':[gender], 'age':[age], 'mood':[mood]})
-        #pd.DataFrame(X).fillna()
-        X=[[21,1,1],[22,0,4],[29,0,5],[31,0,4],[55,1,4]]
-        y_pred=mdl.predict(X)
-        newdf=pd.DataFrame(y_pred,columns=['Genre'])
-        
-        return JsonResponse('Recommended genre is {}:'.format(newdf),safe=False)
-    except ValueError as e:
-        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
-      
+    X=[[age,gender,mood]]
+    PredictionMade = dtree.predict(X)
+    response_dict = {"Predicted": PredictionMade}
+    print(response_dict)
+    return Response(response_dict, status=200)      
         
 def register_request(request):
 	if request.method == "POST":
