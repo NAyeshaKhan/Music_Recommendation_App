@@ -13,7 +13,9 @@ class CustomUserCreationForm(UserCreationForm):
         model=CustomUser
         #keeps additional information about the form and extends UserCreationForm
         fields = ("username", "email", "age", "gender", "password1", "password2")
-
+        
+    gender = forms.TypedChoiceField(choices=[(0, 'Male'), (1, 'Female')])
+    
     def save(self, commit=True):
         user = super(CustomUserCreationForm, self).save(commit=False)
         user.email = self.cleaned_data['email']
@@ -21,7 +23,8 @@ class CustomUserCreationForm(UserCreationForm):
         user.gender = self.cleaned_data['gender']
         if commit:
             user.save()
-        return user              
+        return user       
+               
 
 class PlaylistCreateForm(forms.ModelForm):
 
