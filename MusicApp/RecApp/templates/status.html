@@ -10,7 +10,22 @@
 		<div class="media-content">
 			<span class="title is-5">Recommended Genre: {{data}}</span>
 		</div>
-		
+		{% for s in songs %}
+			<div class="block">
+				<div class="card">
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<img src="https://img.icons8.com/material/24/000000/playlist.png"/>
+							</div>
+							<div class="media-content">
+								<span class="title is-5">{{ s.title }}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
 	</div>
 	
 </body>	
