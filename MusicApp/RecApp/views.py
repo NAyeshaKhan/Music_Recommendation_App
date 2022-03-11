@@ -33,27 +33,49 @@ class CustomUserView(viewsets.ModelViewSet):
     serializer_class = CustomUserSerializers 
    
 def myform(request):
-    if  request.method=='POST':
+    if request.method=='POST':
         form=PredictionForm(request.POST or None)
         if form.is_valid():
-            myform=form.save(commit=False)
+            Age=form.cleaned_data['age']
+            Gender=form.cleaned_data['gender']
+            Mood=form.cleaned_data['mood']
+            df=[[Age,Gender,Mood]]
+            result = predict(df)
+            result=result[0]
+            #songs=
+            return render(request, 'status.html', {"data": result}) 
             
     form=PredictionForm()
-    #return render(request, 'form.html', {'form':form})
+    return render(request, 'form.html', {'form':form})
+    
+
+def predict(df):
+    try:
+        dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
+        y_pred = dtree.predict(df)
+        newdf=pd.DataFrame(y_pred,columns=['Genre'])
+        result=newdf["Genre"]
+        return result
+    except ValueError as e:
+        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
 
 @api_view(['POST', 'GET'])
-def predict(request):
+def predict_api(request):
     data = request.query_params
     age= data.get('age')
     gender = data.get('gender')
     mood = data.get('mood')
-    dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
+    try:
+        dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
         #predict using independent variables
-    X=[[age,gender,mood]]
-    PredictionMade = dtree.predict(X)
-    response_dict = {"Predicted": PredictionMade}
-    print(response_dict)
-    return Response(response_dict, status=200)      
+        X=[[age,gender,mood]]
+        y_pred = dtree.predict(X)
+        newdf=pd.DataFrame(y_pred,columns=['Genre'])
+        result=newdf["Genre"]
+        return JsonResponse('Recommended genre is {}:'.format(newdf),safe=False)
+    except ValueError as e:
+        return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
+
         
 def register_request(request):
 	if request.method == "POST":
@@ -66,7 +88,6 @@ def register_request(request):
 		messages.error(request, "Unsuccessful registration. Invalid information.")
 	form = CustomUserCreationForm()
 	return render (request=request, template_name="register.html", context={"register_form":form})
-
   
      
 def home(request):

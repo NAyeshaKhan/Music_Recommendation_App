@@ -17,7 +17,7 @@ urlpatterns = [
     path('add_playlist/', views.playlist_create, name='playlist_create'),
     path('delete/<int:id>/', views.playlist_delete,name='playlist_delete'),
     path('search/', SearchResultsView.as_view(), name='search'),
-    #path('form/', views.myform, name='myform'),
+    path('form/', views.myform, name='myform'),
     path('api/', include(router.urls)),
-    path('status/', views.predict, name="predict")
+    path('status/', views.predict_api, name="predict")
 ]
