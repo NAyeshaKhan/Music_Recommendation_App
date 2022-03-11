@@ -18,7 +18,7 @@
 					<div class="media">
 						<form method='POST'>
 							{% csrf_token %}
-							{{ form.as_p }}
+							{{ form|linebreaks }}
 							<button type="submit" value="submit">Submit</button>
 						</form>
 					</div>
