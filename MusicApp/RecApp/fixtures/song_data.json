@@ -297,5 +297,125 @@
 			"genre":"Blues",
 			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ"
 		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":26,
+		"fields":{
+			"title":"I Want it that Way",
+			"artist":"Backstreet Boys",
+			"year":1999,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=4fndeDfaWCg"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":27,
+		"fields":{
+			"title":"Happy",
+			"artist":"Pharrell Williams",
+			"year":2013,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=ZbZSe6N_BXs"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":28,
+		"fields":{
+			"title":"What Is Love",
+			"artist":"Haddaway",
+			"year":1993,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=Ma24wmAjRGo"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":29,
+		"fields":{
+			"title":"Always Be My Baby",
+			"artist":"Mariah Carey",
+			"year":1995,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=LfRNRymrv9k"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":30,
+		"fields":{
+			"title":"Call Me Maybe",
+			"artist":"Carly Rae Jepsen",
+			"year":2012,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=fWNaR-rxAic"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":31,
+		"fields":{
+			"title":"Diamond",
+			"artist":"Rihanna",
+			"year":2012,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=kOGBIbqXwYE"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":32,
+		"fields":{
+			"title":"Royals",
+			"artist":"Lorde",
+			"year":2013,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=nlcIKh6sBtc"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":33,
+		"fields":{
+			"title":"Honey and I",
+			"artist":"HAIM",
+			"year":2013,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=mAfxuuaYI2Y"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":34,
+		"fields":{
+			"title":"Electric Worm",
+			"artist":"Beastie Boys",
+			"year":2007,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=lpjGm6FGOB8"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":35,
+		"fields":{
+			"title":"New York",
+			"artist":"James Horner",
+			"year":1997,
+			"genre":"Instrumental",
+			"url":"https://www.youtube.com/watch?v=KM62BcSG9uc"
+		}
 	}
 ]
