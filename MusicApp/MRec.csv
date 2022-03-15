@@ -62,7 +62,7 @@ Age,Gender,Mood,Genre
 42,F,Happy,Pop
 42,F,Gloomy,Instrumental
 42,F,Stressed,Indie/Acoustic
-42,F,Relaxing,instrumental
+42,F,Relaxing,Instrumental
 42,F,Energetic,Pop
 39,F,Happy,Indie/Acoustic
 39,F,Gloomy,Rock
@@ -102,7 +102,7 @@ Age,Gender,Mood,Genre
 37,F,Happy,Pop
 37,F,Gloomy,Indie/Acoustic
 37,F,Stressed,Pop
-37,F,Relaxing,instrumental
+37,F,Relaxing,Instrumental
 37,F,Energetic,Hiphop
 36,M,Happy,Pop
 36,M,Gloomy,Indie/Acoustic
@@ -486,7 +486,7 @@ Age,Gender,Mood,Genre
 21,M,Energetic,Pop
 21,M,Happy,Pop
 21,M,Gloomy,Instrumental
-21,M,Stressed,BLues
+21,M,Stressed,Blues
 21,M,Relaxing,Pop
 21,M,Energetic,Pop
 21,M,Happy,Pop
@@ -514,11 +514,11 @@ Age,Gender,Mood,Genre
 21,F,Stressed,Instrumental
 21,F,Relaxing,Pop
 21,F,Energetic,Hiphop
-21,?,Happy,EDM
-21,?,Gloomy,Indie/Acoustic
-21,?,Stressed,Rock
-21,?,Relaxing,Indie/Acoustic
-21,?,Energetic,Rock
+21,M,Happy,EDM
+21,M,Gloomy,Indie/Acoustic
+21,M,Stressed,Rock
+21,M,Relaxing,Indie/Acoustic
+21,M,Energetic,Rock
 20,F,Happy,Pop
 20,F,Gloomy,Indie/Acoustic
 20,F,Stressed,Rock
