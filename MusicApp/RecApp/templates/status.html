@@ -8,24 +8,36 @@
 <body>
 	<div class="column">
 		<div class="media-content">
-			<span class="title is-5">Recommended Genre: {{data}}</span>
+			<span class="title is-5">Search Results:</span>
 		</div>
 		{% for s in songs %}
 			<div class="block">
-				<div class="card">
+				 <div class="card">
 					<div class="card-content">
 						<div class="media">
 							<div class="media-left">
-								<img src="https://img.icons8.com/material/24/000000/playlist.png"/>
+								<figure class="image is-48x48">
+								  <img src="https://img.icons8.com/material/48/000000/musical-notes--v1.png"/>
+								</figure>
 							</div>
 							<div class="media-content">
-								<span class="title is-5">{{ s.title }}</span>
+								<span class="title is-6">{{ s.title }}</span>
+								<div class="media-content">
+									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
+								</div>
 							</div>
+							<form action="" method="">
+								{% csrf_token %}
+								<button type="submit" class="btn">
+									<i class="far fa-plus-square fa-lg  float-middle"></i>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
 			</div>
 		{% endfor %}
+			
 	</div>
 	
 </body>	
