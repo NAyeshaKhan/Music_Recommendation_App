@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% load static %}
+{% block content %}
 <head>
 	<link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 
-{% block content %}	
+
 <body>
-	<div class="column">
+		<div class="column">
 		<div class="media-content">
-			<span class="title is-5">Create Your Playlists:</span>
+			<span class="title is-5">Get song recommendations by entering your :</span>
 		</div>
 			<div class="block">
 			  <div class="card">
@@ -18,8 +19,34 @@
 					<div class="media">
 						<form method='POST'>
 							{% csrf_token %}
-							{{ form|linebreaks }}
-							<button type="submit" value="submit">Submit</button>
+							<label for="Age">Age: </label>
+							<div class="input-group mb-3">
+                            <div class="input-group-append">
+
+                            </div>
+                            {{form.age}}
+                        </div>
+
+							<label for="Gender">Gender: </label>
+                          <div class="input-group mb-3">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fa fa-venus-mars"></i></span>
+                            </div>
+                            {{form.gender}}
+                        </div>
+
+						<label for="Mood"> How are you feeling? </label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="fas fa-cloud-sun"></i></span>
+                            </div>
+                            {{form.mood}}
+
+                        </div>
+							<br>
+							<br>
+
+							<button type="submit"  class="btn btn-primary">Submit</button>
 						</form>
 					</div>
 				  </div>
