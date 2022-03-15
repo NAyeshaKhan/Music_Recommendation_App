@@ -24,6 +24,7 @@ class Playlist(models.Model):
 
 
 class Song(models.Model):
+    playlist = models.ManyToManyField(Playlist, blank=True)
     title = models.CharField(max_length=150)
     artist = models.CharField(max_length=150)
     year = models.IntegerField()
