@@ -27,7 +27,12 @@
 									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
 								</div>
 							</div>
-							
+							<form action="" method="">
+								{% csrf_token %}
+								<button type="submit" class="btn">
+									<i class="far fa-plus-square fa-lg  float-middle"></i>
+								</button>
+							</form>
 						</div>
 					</div>
 				</div>
