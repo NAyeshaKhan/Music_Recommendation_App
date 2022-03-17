@@ -1,0 +1,60 @@
+[
+	
+	{	
+		"model": "RecApp.customuser", 
+		"pk": 1, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$tk4eRArBjsmQ2mooLNiqJF$wAVVUCQPr3banHt/v28MjfWC/fDzM4mcgHRB/ankzME=", 
+			"is_superuser": true, 
+			"username": "admin",
+			"email": "", 
+			"is_staff": true,
+			"age": 18, 
+			"gender": "1"
+			}
+	},
+	{
+		"model": "RecApp.customuser", 
+		"pk": 2, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$7cxd5hHmY5CLLIkXuo00hU$qaqh5Uz89nzrPhFtALxaAuWrtIBe8yzFjIV8cNJFOLo=", 
+			"username": "Simon",
+			"email": "belmont@email.com",
+			"age": 30,
+			"gender": "0"
+			}
+	},
+	{
+		"model": "RecApp.customuser", 
+		"pk": 3, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$7cxd5hHmY5CLLIkXuo00hU$qaqh5Uz89nzrPhFtALxaAuWrtIBe8yzFjIV8cNJFOLo=", 
+			"username": "Sam",
+			"email": "sam@email.com",
+			"age": 22,
+			"gender": "0"
+			}
+	},
+	{
+		"model": "RecApp.customuser", 
+		"pk": 4, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$7cxd5hHmY5CLLIkXuo00hU$qaqh5Uz89nzrPhFtALxaAuWrtIBe8yzFjIV8cNJFOLo=", 
+			"username": "Shane",
+			"email": "shane@email.com",
+			"age": 37,
+			"gender": "0"
+			}
+	},
+	{
+		"model": "RecApp.customuser", 
+		"pk": 5, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$7cxd5hHmY5CLLIkXuo00hU$qaqh5Uz89nzrPhFtALxaAuWrtIBe8yzFjIV8cNJFOLo=", 
+			"username": "Tiffany",
+			"email": "tiff@email.com",
+			"age": 31,
+			"gender": "1"
+			}
+	}
+]
