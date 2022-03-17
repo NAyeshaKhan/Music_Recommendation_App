@@ -2,30 +2,30 @@
 {% load crispy_forms_tags %}
 {% load static %}
 <head>
-	<link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 </head>
 
 {% block content %}	
 <body>
-	<div class="column">
-		<div class="media-content">
-			<span class="title is-5">Create Your Playlists:</span>
-		</div>
-			<div class="block">
-			  <div class="card">
-				<div class="card-content">
-					<div class="media">
+	<div class="container">
+		<div class="row">
+			<div class="row">
+				<div class="col-sm-8">
+					<h4 class="page-header">Create Your Playlists:</h4>
 						<form action="" method="POST" autocomplete="off">
 							{% csrf_token %}
 							{{form.as_p}}
 							<button type="submit" class="btn btn-success">Create New Playlist</button>
 						</form>
-					</div>
-				  </div>
 				</div>
 			</div>
-	</div>
-		
+		</div>
+	</div>	
 {% endblock content %}
 </body>
+
+
+
