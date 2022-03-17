@@ -36,8 +36,8 @@ def myform(request):
     if request.method=='POST':
         form=PredictionForm(request.POST or None)
         if form.is_valid():
-            Age=form.cleaned_data['age']
-            Gender=form.cleaned_data['gender']
+            Age=request.user.age
+            Gender=request.user.gender
             Mood=form.cleaned_data['mood']
             df=[[Age,Gender,Mood]]
             result = predict(df)

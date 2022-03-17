@@ -39,6 +39,4 @@ class PlaylistCreateForm(forms.ModelForm):
         self.fields
         
 class PredictionForm(forms.Form):
-    age = forms.IntegerField()
-    gender = forms.TypedChoiceField(choices=[(0, 'Male'), (1, 'Female')])
     mood = forms.TypedChoiceField(choices=[(1,'Happy'), (2,'Gloomy'), (3,'Stressed'), (4,'Relaxing'), (5,'Energetic')])
