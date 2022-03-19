@@ -19,5 +19,6 @@ urlpatterns = [
     path('search/', SearchResultsView.as_view(), name='search'),
     path('form/', views.myform, name='myform'),
     path('api/', include(router.urls)),
-    path('status/', views.predict_api, name="predict")
+    path('status/', views.predict_api, name="predict"),
+    path('addsongtoplaylist/<int:id>', views.addsongtoplaylist, name='addsongtoplaylist'),
 ]

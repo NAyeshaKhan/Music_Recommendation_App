@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from .forms import CustomUserCreationForm , PlaylistCreateForm
+from .forms import CustomUserCreationForm , PlaylistCreateForm, AddSongToPlaylist
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
@@ -143,6 +143,18 @@ def playlist_delete(request,id):
 	playlist.delete()
 	return redirect('/playlist')
 
+def addsongtoplaylist(request,id):
+    if request.method == "GET":
+        form = AddSongToPlaylist()
+        form.fields["playlist"].queryset=Playlist.objects.filter(user=request.user)
+        return render(request,'addsongtoplaylist.html',{'form':form})
+    else:
+        form = AddSongToPlaylist(request.POST)
+        if form.is_valid():
+            song=Song.objects.get(pk=id)
+            song.playlist.set(form.cleaned_data.get('playlist'))
+            return redirect('/playlist')
+
 class SearchResultsView(ListView):
     model = Song
     template_name = 'search.html'
@@ -158,4 +170,3 @@ class SearchResultsView(ListView):
         else:
             result = None
         return result
-

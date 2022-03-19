@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import CustomUser
+from .models import CustomUser, Song
 from .models import Playlist
 
 
@@ -36,7 +36,16 @@ class PlaylistCreateForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(PlaylistCreateForm,self).__init__(*args, **kwargs)
         self.fields['title'].required= False
-        self.fields
+
+class AddSongToPlaylist(forms.ModelForm):
+
+    class Meta:
+        model = Song
+        fields = ('playlist',)
+
+    def __init__(self, *args, **kwargs):
+        super(AddSongToPlaylist,self).__init__(*args, **kwargs)
+        self.fields['playlist'].required= True
         
 class PredictionForm(forms.Form):
     mood = forms.TypedChoiceField(choices=[(1,'Happy'), (2,'Gloomy'), (3,'Stressed'), (4,'Relaxing'), (5,'Energetic')])
