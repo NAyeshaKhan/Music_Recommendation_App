@@ -20,5 +20,7 @@ urlpatterns = [
     path('form/', views.myform, name='myform'),
     path('api/', include(router.urls)),
     path('status/', views.predict_api, name="predict"),
-    path('addsongtoplaylist/<int:id>', views.addsongtoplaylist, name='addsongtoplaylist'),
+    path('addsongtoplaylist/<int:id>/', views.addsongtoplaylist, name='addsongtoplaylist'),
+    path('playlistview/<int:id>/', views.playlistview, name="playlistview"),
+    path('song_delete_playlist/<int:sid>/', views.song_delete_playlist, name="song_delete_playlist"),
 ]

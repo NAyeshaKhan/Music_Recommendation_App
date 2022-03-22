@@ -155,6 +155,22 @@ def addsongtoplaylist(request,id):
             song.playlist.set(form.cleaned_data.get('playlist'))
             return redirect('/playlist')
 
+def playlistview(request,id):
+    queryset = Song.objects.filter(playlist__pk=id)
+    context = {
+        "object_list": queryset
+    }
+    request.session['pid'] = id
+    return render(request, "playlistview.html", context)
+
+def song_delete_playlist(request,sid):
+    pid= request.session['pid']
+    song = Song.objects.get(pk=sid)
+    song.playlist.remove(pid)
+    song.save()
+    del request.session['pid']
+    return redirect('/playlist')
+
 class SearchResultsView(ListView):
     model = Song
     template_name = 'search.html'

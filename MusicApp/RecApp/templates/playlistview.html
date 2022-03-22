@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>	
+<body>
+	<div class="column">
+		<div class="media-content">
+			<span class="title is-5">Playlist Results:</span>
+		</div>
+		{% for s in object_list %}
+			<div class="block">
+				 <div class="card">
+					<div class="card-content">
+						<div class="media">
+							<div class="media-left">
+								<figure class="image is-48x48">
+								  <img src="https://img.icons8.com/material/48/000000/musical-notes--v1.png"/>
+								</figure>
+							</div>
+							<div class="media-content">
+								<span class="title is-6">{{ s.title }}</span>
+								<div class="media-content">
+									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
+								</div>
+							</div>
+							<form action="{% url 'RecApp:song_delete_playlist' s.id%}" method="post", onsubmit="return confirm('Are you sure you want to delete the song from playlist?')">
+								{% csrf_token %}
+								<button type="submit" class="btn">
+									<i class="far fa-trash-alt fa-lg text-danger float-right"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+		<a href="/playlist">
+			<button type="submit" class="btn btn-success">
+			View All Playlists
+			</button>
+		</a>	
+	</div>
+</body>	
+{% endblock content %}
+
+
