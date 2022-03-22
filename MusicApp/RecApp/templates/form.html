@@ -2,21 +2,22 @@
 {% load crispy_forms_tags %}
 {% load static %}
 <head>
-	<link href="{% static 'css/button.css' %}" rel="stylesheet" />
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
 <!------ Include the above in your HEAD tag ---------->
 </head>
 
 {% block content %}	
 <body>
-	<div class="container">
+	
+	<div class="container" style=" width: 100%; margin-left : 15%">
 		<div class="row">
 			<div class="row">
 				<div class="col-sm-8">
 					<h4 class="page-header">Get song recommendations by entering your mood:</h4>
-						<form method='POST'>
+						<form method='POST' style="margin: 0 auto;">
 							{% csrf_token %}
 							<label for="Mood"> How are you feeling? </label>
 							<div class="input-group mb-2">
@@ -25,14 +26,13 @@
 								</div>
 								{{form.mood}}
 							</div>
-							<br><br>
 							<button type="submit"  class="btn btn-primary">Submit</button>
 							
 						</form>
 				</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 {% endblock content %}
 </body>
 
