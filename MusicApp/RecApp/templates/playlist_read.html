@@ -24,7 +24,13 @@
 						<div class="media-content">
 							<span class="title is-5">{{ pl.title }}</span>
 						</div>
-						<form action="{% url 'RecApp:playlist_delete' pl.id %}" method="post">
+						<form action="{% url 'RecApp:playlistview' pl.id %}" method="post">
+							{% csrf_token %}
+							<button type="submit" class="btn">
+								<i class="fas fa-search fa-lg float-right"></i>
+							</button>
+						</form>
+						<form action="{% url 'RecApp:playlist_delete' pl.id %}" method="post", onsubmit="return confirm('Are you sure you want to delete the playlist?')">
 							{% csrf_token %}
 							<button type="submit" class="btn">
 								<i class="far fa-trash-alt fa-lg text-danger float-right"></i>
