@@ -169,7 +169,7 @@ def song_delete_playlist(request,sid):
     song.playlist.remove(pid)
     song.save()
     del request.session['pid']
-    return redirect('/playlist')
+    return playlistview(request,pid)
 
 class SearchResultsView(ListView):
     model = Song
