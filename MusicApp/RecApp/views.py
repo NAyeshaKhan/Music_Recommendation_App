@@ -161,7 +161,7 @@ def playlistview(request,id):
         "object_list": queryset
     }
     request.session['pid'] = id
-    return render(request, "playlistview.html", context)
+    return render(request, "playlist_view.html", context)
 
 def song_delete_playlist(request,sid):
     pid= request.session['pid']
