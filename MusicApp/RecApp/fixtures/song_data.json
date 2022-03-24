@@ -417,5 +417,65 @@
 			"genre":"Instrumental",
 			"url":"https://www.youtube.com/watch?v=KM62BcSG9uc"
 		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":36,
+		"fields":{
+			"title":"Lonely (Instrumental Ver.)",
+			"artist":"B1A4",
+			"year":2014,
+			"genre":"Instrumental",
+			"url":"https://www.youtube.com/watch?v=vuIvMhuzCKM"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":37,
+		"fields":{
+			"title":"Hush (Instrumental)",
+			"artist":"Miss A",
+			"year":2012,
+			"genre":"Instrumental",
+			"url":"https://youtu.be/hv0fj6MK1N0"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":38,
+		"fields":{
+			"title":"Dracula ",
+			"artist":"Castlevania",
+			"year":1994,
+			"genre":"Instrumental",
+			"url":"https://youtu.be/4LuFBlUNoRY?list=PLB1mBUgyWbK3SSmd7_ELjPat6xQXeXqDH"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":39,
+		"fields":{
+			"title":"All of Me (Piano Cover)",
+			"artist":"John Legend",
+			"year":2015,
+			"genre":"Instrumental",
+			"url":"https://youtu.be/b3E6E6hYSSI"
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":40,
+		"fields":{
+			"title":"Marble Machine ",
+			"artist":"Wintergatan",
+			"year":2016,
+			"genre":"Instrumental",
+			"url":"https://youtu.be/IvUU8joBb1Q"
+		}
 	}
 ]
