@@ -152,8 +152,10 @@ def addsongtoplaylist(request,id):
         form = AddSongToPlaylist(request.POST)
         if form.is_valid():
             song=Song.objects.get(pk=id)
-            song.playlist.set(form.cleaned_data.get('playlist'))
+            playlist=form.cleaned_data.get('playlist')
+            song.playlist.add(playlist[0].id)
             return redirect('/playlist')
+            
 
 def playlistview(request,id):
     queryset = Song.objects.filter(playlist__pk=id)
