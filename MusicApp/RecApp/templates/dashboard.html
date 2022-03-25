@@ -2,10 +2,29 @@
 {% load static %}
 {% block content %}
 
-<div class="container-fluid px-4">
-    <h1 class="mt-4">Welcome to your dashboard, {{user.username}}!</h1>
-        <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Add songs and create playlists based on your mood preferences.</li>
-        </ol>
+<div class="main">
+	<div class="container h-100">
+        <div class="d-flex justify-content-center h-100">
+            <div class="user_card">
+                <div class="d-flex justify-content-center">
+                    <h3 id="form-title">Welcome to your dashboard, {{user.username}}!</h3>
+				</div>
+				<h4 style="text-align:center">Add songs and create playlists based on your mood preferences.</h3>
+                <div class="d-flex justify-content-center form_container">
+					<div style="text-align:center">
+					  <p class="breadcrumb-item active"></p>
+					  <p class="title">Your Age: {{ user.age }}</p>
+					  {% if user.gender == '1' %}
+						<p>Gender: Female</p>
+					  {% else %}
+						<p>Gender: Male</p>
+					  {% endif %}
+					</div>
+                </div>
+			</div>
+		</div>	
+	</div>	
 </div>
+
+
 {% endblock content %}
