@@ -1,6 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
-from .forms import CustomUserCreationForm , PlaylistCreateForm, AddSongToPlaylist
+from .forms import CustomUserCreationForm , PlaylistCreateForm, AddSongToPlaylist, UpdateUser
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
@@ -29,10 +29,12 @@ from sklearn import preprocessing
 import pandas as pd 
 
 class CustomUserView(viewsets.ModelViewSet): 
+    #To display all User objects through Serializers
     queryset = CustomUser.objects.all() 
     serializer_class = CustomUserSerializers 
    
 def myform(request):
+    #Takes from data and passes it through predict() to return a predicted genre and fetches related songs 
     if request.method=='POST':
         form=PredictionForm(request.POST or None)
         if form.is_valid():
@@ -50,6 +52,7 @@ def myform(request):
     
 
 def predict(df):
+    #Loads joblib file and predicts a genre using form data
     try:
         dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
         y_pred = dtree.predict(df)
@@ -61,6 +64,7 @@ def predict(df):
 
 @api_view(['POST', 'GET'])
 def predict_api(request):
+    #Passes data to the API through the query parameters
     data = request.query_params
     age= data.get('age')
     gender = data.get('gender')
@@ -143,7 +147,7 @@ def playlist_delete(request,id):
 	playlist.delete()
 	return redirect('/playlist')
 
-def addsongtoplaylist(request,id):
+def add_song(request,id):
     if request.method == "GET":
         form = AddSongToPlaylist()
         form.fields["playlist"].queryset=Playlist.objects.filter(user=request.user)
@@ -157,7 +161,7 @@ def addsongtoplaylist(request,id):
             return redirect('/playlist')
             
 
-def playlistview(request,id):
+def playlist_view(request,id):
     queryset = Song.objects.filter(playlist__pk=id)
     context = {
         "object_list": queryset
@@ -171,7 +175,7 @@ def song_delete_playlist(request,sid):
     song.playlist.remove(pid)
     song.save()
     del request.session['pid']
-    return playlistview(request,pid)
+    return playlist_view(request,pid)
 
 class SearchResultsView(ListView):
     model = Song
@@ -188,3 +192,18 @@ class SearchResultsView(ListView):
         else:
             result = None
         return result
+         
+# update view for details
+def update_view(request, id):
+    # dictionary for initial data with field names as keys
+    context ={}
+    obj = get_object_or_404(CustomUser, id = id)
+    # pass the object as instance in form
+    form = UpdateUser(request.POST or None, instance = obj)
+    # save the data from the form and redirect to detail_view
+    if form.is_valid():
+        form.save()
+        return redirect('/dashboard')
+    # add form dictionary to context
+    context["form"] = form
+    return render(request, "update_view.html", context)

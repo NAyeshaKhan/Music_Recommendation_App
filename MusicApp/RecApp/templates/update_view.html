@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<head>
+	<link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>	
+<body>
+	<div class="column">
+		<div class="media-content">
+			<h3 class="title is-5" style="text-align:center">Update Account</h3>
+		</div>
+		<div class="block">
+		    <div class="card">
+				<div class="card-content">
+					<div class="media">
+						<div class="d-flex justify-content-center form_container">
+							<form method="POST">
+								{% csrf_token %}
+								{{ form.as_ul }}
+								<button type="submit" class="btn btn-success">Update Profile</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>	
+{% endblock content %}
+
+

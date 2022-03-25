@@ -9,7 +9,6 @@ from .models import Playlist
 class CustomUserCreationForm(UserCreationForm):
     
     class Meta:
-    #class Meta(UserCreationForm.Meta):
         model=CustomUser
         #keeps additional information about the form and extends UserCreationForm
         fields = ("username", "email", "age", "gender", "password1", "password2")
@@ -49,3 +48,12 @@ class AddSongToPlaylist(forms.ModelForm):
         
 class PredictionForm(forms.Form):
     mood = forms.TypedChoiceField(choices=[(1,'Happy'), (2,'Gloomy'), (3,'Stressed'), (4,'Relaxing'), (5,'Energetic')])
+    
+class UpdateUser(forms.ModelForm):
+
+    class Meta:
+        model = CustomUser
+        fields = ("username", "email", "age", "gender")
+    
+    gender = forms.TypedChoiceField(choices=[(0, 'Male'), (1, 'Female')])   
+    
