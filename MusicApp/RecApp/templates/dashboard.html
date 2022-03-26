@@ -2,29 +2,46 @@
 {% load static %}
 {% block content %}
 
-<div class="main">
-	<div class="container h-100">
-        <div class="d-flex justify-content-center h-100">
-            <div class="user_card">
-                <div class="d-flex justify-content-center">
-                    <h3 id="form-title">Welcome to your dashboard, {{user.username}}!</h3>
+<div class="row container d-flex justify-content-center">
+    <div class="col-xl-6 col-md-12">
+        <div class="row m-l-0 m-r-0">
+            <div class="col-sm-8">
+				<h3 id="form-title">Welcome to your dashboard, {{user.username}}!</h3>
+                <div class="card-block">
+				<div class="m-b-25"> 
+					{% if user.gender == '1' %}
+						<img src="https://img.icons8.com/stickers/200/000000/user-female-circle.png" class="img-radius" alt="Female_User-Profile-Image"> 
+					{% else %}
+						<img src="https://img.icons8.com/stickers/200/000000/user-male-circle.png" class="img-radius" alt="Male_User-Profile-Image"> 
+					{% endif %}
 				</div>
-				<h4 style="text-align:center">Add songs and create playlists based on your mood preferences.</h3>
-                <div class="d-flex justify-content-center form_container">
-					<div style="text-align:center">
-					  <p class="breadcrumb-item active"></p>
-					  <p class="title">Your Age: {{ user.age }}</p>
-					  {% if user.gender == '1' %}
-						<p>Gender: Female</p>
-					  {% else %}
-						<p>Gender: Male</p>
-					  {% endif %}
+				<p></p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+				<h6 style="border-bottom:solid;"><b>Information</b></h6>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="m-b-10 f-w-600"><i>Email</i></p>
+                        <h6 class="text-muted f-w-400">{{ user.email }}</h6>
+                    </div>
+				</div>
+				<div class="row">
+                    <div class="col-sm-6">
+                        <p class="m-b-10 f-w-600"><i>Age</i></p>
+						<h6 class="text-muted f-w-400">{{ user.age }}</h6>
+                    </div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+                        <p class="m-b-10 f-w-600"><i>Gender</i></p>
+                        {% if user.gender == '1' %}
+							<h6 class="text-muted f-w-400">Female</h6>
+						{% else %}
+							<h6 class="text-muted f-w-400">Male</h6>
+						{% endif %}
 					</div>
-                </div>
+				</div>								
+				</div>
 			</div>
-		</div>	
-	</div>	
-</div>
-
-
+		</div>
+    </div>
+ </div>
 {% endblock content %}
