@@ -8,13 +8,13 @@
             <div class="col-sm-8">
 				<h3 id="form-title">Welcome to your dashboard, {{user.username}}!</h3>
                 <div class="card-block">
-				<div class="m-b-25"> 
-					{% if user.gender == '1' %}
-						<img src="https://img.icons8.com/stickers/200/000000/user-female-circle.png" class="img-radius" alt="Female_User-Profile-Image"> 
-					{% else %}
-						<img src="https://img.icons8.com/stickers/200/000000/user-male-circle.png" class="img-radius" alt="Male_User-Profile-Image"> 
-					{% endif %}
-				</div>
+					<div class="m-b-25"> 
+						{% if user.gender == '1' %}
+							<img src="https://img.icons8.com/stickers/200/000000/user-female-circle.png" class="img-radius" alt="Female_User-Profile-Image"> 
+						{% else %}
+							<img src="https://img.icons8.com/stickers/200/000000/user-male-circle.png" class="img-radius" alt="Male_User-Profile-Image"> 
+						{% endif %}
+					</div>
 				<p></p> <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
 				<h6 style="border-bottom:solid;"><b>Information</b></h6>
                 <div class="row">

@@ -3,32 +3,42 @@
 {% block content %}
 
 <head>
-	<link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-</head>	
+  <title>Update profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
-	<div class="column">
-		<div class="media-content">
-			<h3 class="title is-5" style="text-align:center">Update Account</h3>
-		</div>
-		<div class="block">
-		    <div class="card">
-				<div class="card-content">
-					<div class="media">
-						<div class="d-flex justify-content-center form_container">
-							<form method="POST">
-								{% csrf_token %}
-								{{ form.as_ul }}
-								<button type="submit" class="btn btn-success">Update Profile</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
+<div class="container h-100">
+    <div class="d-flex justify-content-center h-100">	
 	
-</body>	
+    <form method="POST">
+		<h2>UPDATE YOUR PERSONAL INFORMATION</h2>
+		{% csrf_token %}
+		<div class="row container" style="text-align:center-right;">
+            <div>
+                <p class="m-b-10 f-w-600"><b>Username:</b></p>
+                {{ form.username }}
+            </div>
+			<div>
+                <p class="m-b-10 f-w-600"><b>Email:</b></p>
+                {{ form.email }}
+            </div>
+			<div>
+                <p class="m-b-10 f-w-600"><b>Age:</b></p>
+                {{ form.age }}
+            </div>		
+			<div>
+                <p class="m-b-10 f-w-600"><b>Gender:</b></p>
+                {{ form.gender }}
+            </div>	
+			<div class="d-flex justify-content mt-3">
+				<button type="submit" class="btn btn-success">Update Profile</button>
+			</div>			
+		</div>		
+	</form>
+</div>
+
+</body>
 {% endblock content %}
 
 
