@@ -126,10 +126,11 @@ def logout_request(request):
 def dashboard(request):
     return render(request, 'dashboard.html')
 
-
+@login_required
 def playlist_read(request):
     return render(request, 'playlist_read.html')
-
+    
+@login_required
 def playlist_create(request):
 	if request.method == "GET":
 		form = PlaylistCreateForm()
@@ -142,11 +143,13 @@ def playlist_create(request):
 			playlist.save()
 			return redirect('/playlist')
 
+@login_required
 def playlist_delete(request,id):
 	playlist = Playlist.objects.get(pk=id)
 	playlist.delete()
 	return redirect('/playlist')
 
+@login_required
 def add_song(request,id):
     if request.method == "GET":
         form = AddSongToPlaylist()
@@ -160,7 +163,7 @@ def add_song(request,id):
             song.playlist.add(playlist[0].id)
             return redirect('/playlist')
             
-
+@login_required
 def playlist_view(request,id):
     queryset = Song.objects.filter(playlist__pk=id)
     context = {
@@ -169,6 +172,7 @@ def playlist_view(request,id):
     request.session['pid'] = id
     return render(request, "playlist_view.html", context)
 
+@login_required
 def song_delete_playlist(request,sid):
     pid= request.session['pid']
     song = Song.objects.get(pk=sid)
@@ -176,6 +180,7 @@ def song_delete_playlist(request,sid):
     song.save()
     del request.session['pid']
     return playlist_view(request,pid)
+
 
 class SearchResultsView(ListView):
     model = Song
@@ -193,6 +198,7 @@ class SearchResultsView(ListView):
             result = None
         return result
          
+@login_required         
 # update view for details
 def update_view(request, id):
     # dictionary for initial data with field names as keys
