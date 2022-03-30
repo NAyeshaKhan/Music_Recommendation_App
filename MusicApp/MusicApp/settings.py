@@ -139,3 +139,9 @@ CRISPY_TEMPLATE_PACK="bootstrap4"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGOUT_REDIRECT_URL = "home"
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'musicrecommendationapp@gmail.com'
+EMAIL_HOST_PASSWORD = 'MusicApp123'
