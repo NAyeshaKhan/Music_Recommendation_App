@@ -9,6 +9,7 @@ from .models import CustomUser, Playlist, Song
 from django.views.generic import ListView
 from django.db.models import Q
 from django.conf import settings
+from django.core.paginator import Paginator
 
 from .forms import PredictionForm 
 from rest_framework import viewsets 
@@ -184,6 +185,14 @@ def song_delete_playlist(request,sid):
     song.save()
     del request.session['pid']
     return playlist_view(request,pid)
+
+@login_required
+def songplayer(request):
+    paginator= Paginator(Song.objects.all(),1)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context={"page_obj":page_obj}
+    return render(request,"songplayer.html",context)
 
 
 class SearchResultsView(ListView):
