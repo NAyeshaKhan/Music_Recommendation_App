@@ -8,6 +8,7 @@ from django.contrib import messages
 from .models import CustomUser, Playlist, Song  
 from django.views.generic import ListView
 from django.db.models import Q
+from django.conf import settings
 
 from .forms import PredictionForm 
 from rest_framework import viewsets 
@@ -26,7 +27,8 @@ import joblib
 import json 
 import numpy as np 
 from sklearn import preprocessing 
-import pandas as pd 
+import pandas as pd
+import os
 
 class CustomUserView(viewsets.ModelViewSet): 
     #To display all User objects through Serializers
@@ -54,7 +56,8 @@ def myform(request):
 def predict(df):
     #Loads joblib file and predicts a genre using form data
     try:
-        dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
+        path = os.path.join(settings.BASE_DIR,"music_predict.joblib")
+        dtree = joblib.load(path)
         y_pred = dtree.predict(df)
         newdf=pd.DataFrame(y_pred,columns=['Genre'])
         result=newdf["Genre"]
@@ -70,7 +73,8 @@ def predict_api(request):
     gender = data.get('gender')
     mood = data.get('mood')
     try:
-        dtree = joblib.load("C:/Users/User/Music_Recommendation_App/MusicApp/music_predict.joblib")
+        path = os.path.join(settings.BASE_DIR,"music_predict.joblib")
+        dtree = joblib.load(path)
         #predict using independent variables
         X=[[age,gender,mood]]
         y_pred = dtree.predict(X)
