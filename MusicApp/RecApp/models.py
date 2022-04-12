@@ -30,6 +30,7 @@ class Song(models.Model):
     year = models.IntegerField()
     genre = models.CharField(max_length=50)
     url = models.URLField(max_length=200)
+    paginate_by = 2
 
     def __str__(self):
         return (

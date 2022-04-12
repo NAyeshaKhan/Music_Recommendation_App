@@ -10,6 +10,7 @@ router = routers.DefaultRouter()
 router.register('RecApp',views.CustomUserView)
 urlpatterns = [
     path('', views.home, name="home"),
+    path("songplayer/", views.songplayer, name="songplayer"),
     path("register/", views.register_request, name="register"),
     path("login/", views.login_request, name="login"),
     path("logout/", views.logout_request, name= "logout"),
