@@ -29,7 +29,9 @@ class Song(models.Model):
     artist = models.CharField(max_length=150)
     year = models.IntegerField()
     genre = models.CharField(max_length=50)
-    url = models.URLField(max_length=200)
+    url = models.URLField(max_length=200, blank=True,null=True)
+    audio_file = models.FileField(blank=True,null=True)
+    image= models.ImageField(blank=True,null=True)
     paginate_by = 2
 
     def __str__(self):
