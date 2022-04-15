@@ -4,6 +4,9 @@ from . import views
 from rest_framework import routers
 from .views import SearchResultsView
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib.staticfiles.urls import static
 
 app_name = "RecApp"
 router = routers.DefaultRouter()
@@ -39,3 +42,6 @@ urlpatterns = [
          name="password_reset_complete"),
 
 ]
+
+urlpatterns += staticfiles_urlpatterns()
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
