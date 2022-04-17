@@ -7,7 +7,9 @@
 			"artist":"Taylor Swift",
 			"year":2021,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=sRxrwjOtIag"
+			"url":"https://www.youtube.com/watch?v=sRxrwjOtIag",
+			"audio_file":"All Too Well.mp3",
+			"image":"All Too Well.jpg"
 		}
 	},
 	
@@ -19,7 +21,9 @@
 			"artist":"Dua Lipa",
 			"year":2020,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=TUVcZfQe-Kw"
+			"url":"https://www.youtube.com/watch?v=TUVcZfQe-Kw",
+			"audio_file":"Levitating.mp3",
+			"image":"Levitating.jpg"
 		}
 	},
 	
@@ -31,7 +35,9 @@
 			"artist":"The Weeknd",
 			"year":2020,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=4NRXx6U8ABQ"
+			"url":"https://www.youtube.com/watch?v=4NRXx6U8ABQ",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -43,7 +49,9 @@
 			"artist":"Gnarls Barkley",
 			"year":2006,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=-N4jf6rtyuw"
+			"url":"https://www.youtube.com/watch?v=-N4jf6rtyuw",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -55,7 +63,9 @@
 			"artist":"MØ ",
 			"year":2015,
 			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=rn9AQoI7mYU"
+			"url":"https://www.youtube.com/watch?v=rn9AQoI7mYU",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -67,7 +77,9 @@
 			"artist":"Daft Punk",
 			"year":2013,
 			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=CCHdMIEGaaM"
+			"url":"https://www.youtube.com/watch?v=CCHdMIEGaaM",
+			"audio_file":"Get Lucky.mp3",
+			"image":"get lucky.jpg"
 		}
 	},
 	
@@ -79,7 +91,9 @@
 			"artist":"David Guetta",
 			"year":2011,
 			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=JRfuAukYTKg"
+			"url":"https://www.youtube.com/watch?v=JRfuAukYTKg",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -91,7 +105,9 @@
 			"artist":"Girls Generation",
 			"year":2015,
 			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=NfzYlgO30do"
+			"url":"https://www.youtube.com/watch?v=NfzYlgO30do",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -103,7 +119,9 @@
 			"artist":"Led Zeppelin",
 			"year":1970,
 			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=RlNhD0oS5pk"
+			"url":"https://www.youtube.com/watch?v=RlNhD0oS5pk",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -115,7 +133,9 @@
 			"artist":"Queen",
 			"year":1975,
 			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=fJ9rUzIMcZQ"
+			"url":"https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -127,7 +147,9 @@
 			"artist":"Journey",
 			"year":1981,
 			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=1k8craCGpgs"
+			"url":"https://www.youtube.com/watch?v=1k8craCGpgs",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -139,7 +161,9 @@
 			"artist":"Blue Oyster Cult",
 			"year":1976,
 			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=Dy4HA3vUv2c"
+			"url":"https://www.youtube.com/watch?v=Dy4HA3vUv2c",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -151,7 +175,9 @@
 			"artist":"Johnny Cash",
 			"year":1957,
 			"genre":"Country",
-			"url":"https://www.youtube.com/watch?v=jh169rVMveA"
+			"url":"https://www.youtube.com/watch?v=jh169rVMveA",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -163,7 +189,9 @@
 			"artist":"Dolly Parton",
 			"year":1974,
 			"genre":"Country",
-			"url":"https://www.youtube.com/watch?v=Ixrje2rXLMA"
+			"url":"https://www.youtube.com/watch?v=Ixrje2rXLMA",
+			"audio_file":"Dolly_Parton_-_Jolene.mp3",
+			"image":"jolene.jpg"
 		}
 	},
 	
@@ -175,7 +203,9 @@
 			"artist":"Dolly Parton",
 			"year":1980,
 			"genre":"Country",
-			"url":"https://www.youtube.com/watch?v=UbxUSsFXYo4"
+			"url":"https://www.youtube.com/watch?v=UbxUSsFXYo4",
+			"audio_file":"9 To 5.mp3",
+			"image":"9to5.jpg"
 		}
 	},
 	
@@ -187,7 +217,9 @@
 			"artist":"Carrie Underwood",
 			"year":2005,
 			"genre":"Country",
-			"url":"https://www.youtube.com/watch?v=WaSy8yy-mr8"
+			"url":"https://www.youtube.com/watch?v=WaSy8yy-mr8",
+			"audio_file":"Before_He_Cheats.mp3",
+			"image":"Before_He_Cheats.png"
 		}
 	},
 	
@@ -199,7 +231,9 @@
 			"artist":"Drake",
 			"year":2018,
 			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=U9BwWKXjVaI"
+			"url":"https://www.youtube.com/watch?v=U9BwWKXjVaI",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -211,7 +245,9 @@
 			"artist":"Lauryn Hill",
 			"year":1998,
 			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=NdNFFC0p7N4"
+			"url":"https://www.youtube.com/watch?v=NdNFFC0p7N4",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -223,7 +259,9 @@
 			"artist":"Eminem",
 			"year":2000,
 			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=kt14c7sYTFA"
+			"url":"https://www.youtube.com/watch?v=kt14c7sYTFA",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -235,7 +273,9 @@
 			"artist":"Kendrick Lamar",
 			"year":2017,
 			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=tvTRZJ-4EyI"
+			"url":"https://www.youtube.com/watch?v=tvTRZJ-4EyI",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -247,7 +287,9 @@
 			"artist":"Lana Del Rey",
 			"year":2011,
 			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=Yu9V3Phfsf8"
+			"url":"https://www.youtube.com/watch?v=Yu9V3Phfsf8",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -259,7 +301,9 @@
 			"artist":"Foster The People",
 			"year":2010,
 			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=SDTZ7iX4vTQ"
+			"url":"https://www.youtube.com/watch?v=SDTZ7iX4vTQ",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -271,7 +315,9 @@
 			"artist":"Sharon Van Etten",
 			"year":2014,
 			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=fDW-W2J84Hc"
+			"url":"https://www.youtube.com/watch?v=fDW-W2J84Hc",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -283,7 +329,9 @@
 			"artist":"Mitski",
 			"year":2018,
 			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=3vjkh-acmTE"
+			"url":"https://www.youtube.com/watch?v=3vjkh-acmTE",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -295,7 +343,9 @@
 			"artist":"Etta James",
 			"year":1968,
 			"genre":"Blues",
-			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ"
+			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -307,7 +357,9 @@
 			"artist":"Backstreet Boys",
 			"year":1999,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=4fndeDfaWCg"
+			"url":"https://www.youtube.com/watch?v=4fndeDfaWCg",
+			"audio_file":"I_Want_It_That_Way.mp3",
+			"image":"bsb.jpg"
 		}
 	},
 	
@@ -319,7 +371,9 @@
 			"artist":"Pharrell Williams",
 			"year":2013,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=ZbZSe6N_BXs"
+			"url":"https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -331,7 +385,9 @@
 			"artist":"Haddaway",
 			"year":1993,
 			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=Ma24wmAjRGo"
+			"url":"https://www.youtube.com/watch?v=Ma24wmAjRGo",
+			"audio_file":"What_Is_Love.mp3",
+			"image":"Haddaway.jpg"
 		}
 	},
 	
@@ -343,7 +399,9 @@
 			"artist":"Mariah Carey",
 			"year":1995,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=LfRNRymrv9k"
+			"url":"https://www.youtube.com/watch?v=LfRNRymrv9k",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -355,7 +413,9 @@
 			"artist":"Carly Rae Jepsen",
 			"year":2012,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=fWNaR-rxAic"
+			"url":"https://www.youtube.com/watch?v=fWNaR-rxAic",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -367,7 +427,9 @@
 			"artist":"Rihanna",
 			"year":2012,
 			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=kOGBIbqXwYE"
+			"url":"https://www.youtube.com/watch?v=kOGBIbqXwYE",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -379,7 +441,9 @@
 			"artist":"Lorde",
 			"year":2013,
 			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=nlcIKh6sBtc"
+			"url":"https://www.youtube.com/watch?v=nlcIKh6sBtc",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -391,7 +455,9 @@
 			"artist":"HAIM",
 			"year":2013,
 			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=mAfxuuaYI2Y"
+			"url":"https://www.youtube.com/watch?v=mAfxuuaYI2Y",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -403,7 +469,9 @@
 			"artist":"Beastie Boys",
 			"year":2007,
 			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=lpjGm6FGOB8"
+			"url":"https://www.youtube.com/watch?v=lpjGm6FGOB8",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -415,7 +483,9 @@
 			"artist":"James Horner",
 			"year":1997,
 			"genre":"Instrumental",
-			"url":"https://www.youtube.com/watch?v=KM62BcSG9uc"
+			"url":"https://www.youtube.com/watch?v=KM62BcSG9uc",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -439,7 +509,9 @@
 			"artist":"Miss A",
 			"year":2012,
 			"genre":"Instrumental",
-			"url":"https://youtu.be/hv0fj6MK1N0"
+			"url":"https://youtu.be/hv0fj6MK1N0",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -451,7 +523,9 @@
 			"artist":"Castlevania",
 			"year":1994,
 			"genre":"Instrumental",
-			"url":"https://youtu.be/4LuFBlUNoRY?list=PLB1mBUgyWbK3SSmd7_ELjPat6xQXeXqDH"
+			"url":"",
+			"audio_file":"Castlevania.mp3",
+			"image":"castlevania.jpg"
 		}
 	},
 	
@@ -463,7 +537,9 @@
 			"artist":"John Legend",
 			"year":2015,
 			"genre":"Instrumental",
-			"url":"https://youtu.be/b3E6E6hYSSI"
+			"url":"https://youtu.be/b3E6E6hYSSI",
+			"audio_file":"",
+			"image":""
 		}
 	},
 	
@@ -475,7 +551,9 @@
 			"artist":"Wintergatan",
 			"year":2016,
 			"genre":"Instrumental",
-			"url":"https://youtu.be/IvUU8joBb1Q"
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
 		}
 	}
 ]
