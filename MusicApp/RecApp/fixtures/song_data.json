@@ -41,37 +41,10 @@
 		}
 	},
 	
+	
 	{
 		"model":"RecApp.Song",
 		"pk":4,
-		"fields":{
-			"title":"Crazy",
-			"artist":"Gnarls Barkley",
-			"year":2006,
-			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=-N4jf6rtyuw",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":5,
-		"fields":{
-			"title":"Lean On",
-			"artist":"MØ ",
-			"year":2015,
-			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=rn9AQoI7mYU",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":6,
 		"fields":{
 			"title":"Get Lucky",
 			"artist":"Daft Punk",
@@ -85,105 +58,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":7,
-		"fields":{
-			"title":"Titanium",
-			"artist":"David Guetta",
-			"year":2011,
-			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=JRfuAukYTKg",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":8,
-		"fields":{
-			"title":"Catch Me If You Can",
-			"artist":"Girls Generation",
-			"year":2015,
-			"genre":"EDM",
-			"url":"https://www.youtube.com/watch?v=NfzYlgO30do",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":9,
-		"fields":{
-			"title":"Immigrant Song",
-			"artist":"Led Zeppelin",
-			"year":1970,
-			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=RlNhD0oS5pk",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":10,
-		"fields":{
-			"title":"Bohemian Rhapsody",
-			"artist":"Queen",
-			"year":1975,
-			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":11,
-		"fields":{
-			"title":"Don't Stop Believin'",
-			"artist":"Journey",
-			"year":1981,
-			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=1k8craCGpgs",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":12,
-		"fields":{
-			"title":"(Don't Fear) The Reaper",
-			"artist":"Blue Oyster Cult",
-			"year":1976,
-			"genre":"Rock",
-			"url":"https://www.youtube.com/watch?v=Dy4HA3vUv2c",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":13,
-		"fields":{
-			"title":"I Walk the Line",
-			"artist":"Johnny Cash",
-			"year":1957,
-			"genre":"Country",
-			"url":"https://www.youtube.com/watch?v=jh169rVMveA",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":14,
+		"pk":5,
 		"fields":{
 			"title":"Jolene",
 			"artist":"Dolly Parton",
@@ -197,7 +72,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":15,
+		"pk":6,
 		"fields":{
 			"title":"9 to 5",
 			"artist":"Dolly Parton",
@@ -211,7 +86,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":16,
+		"pk":7,
 		"fields":{
 			"title":"Before He Cheats",
 			"artist":"Carrie Underwood",
@@ -225,7 +100,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":17,
+		"pk":8,
 		"fields":{
 			"title":"Nice For What",
 			"artist":"Drake",
@@ -239,119 +114,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":18,
-		"fields":{
-			"title":"Lost Ones",
-			"artist":"Lauryn Hill",
-			"year":1998,
-			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=NdNFFC0p7N4",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":19,
-		"fields":{
-			"title":"Stan",
-			"artist":"Eminem",
-			"year":2000,
-			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=kt14c7sYTFA",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":20,
-		"fields":{
-			"title":"Humble",
-			"artist":"Kendrick Lamar",
-			"year":2017,
-			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=tvTRZJ-4EyI",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":21,
-		"fields":{
-			"title":"Video Games",
-			"artist":"Lana Del Rey",
-			"year":2011,
-			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=Yu9V3Phfsf8",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":22,
-		"fields":{
-			"title":"Pumped Up Kicks",
-			"artist":"Foster The People",
-			"year":2010,
-			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=SDTZ7iX4vTQ",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":23,
-		"fields":{
-			"title":"Every Time the Sun Comes Up",
-			"artist":"Sharon Van Etten",
-			"year":2014,
-			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=fDW-W2J84Hc",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":24,
-		"fields":{
-			"title":"Washing Machine Heart",
-			"artist":"Mitski",
-			"year":2018,
-			"genre":"Indie/Acoustic",
-			"url":"https://www.youtube.com/watch?v=3vjkh-acmTE",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":25,
-		"fields":{
-			"title":"I'd Rather Go Blind",
-			"artist":"Etta James",
-			"year":1968,
-			"genre":"Blues",
-			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":26,
+		"pk":9,
 		"fields":{
 			"title":"I Want it that Way",
 			"artist":"Backstreet Boys",
@@ -365,21 +128,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":27,
-		"fields":{
-			"title":"Happy",
-			"artist":"Pharrell Williams",
-			"year":2013,
-			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=ZbZSe6N_BXs",
-			"audio_file":"",
-			"image":""
-		}
-	},
-	
-	{
-		"model":"RecApp.Song",
-		"pk":28,
+		"pk":10,
 		"fields":{
 			"title":"What Is Love",
 			"artist":"Haddaway",
@@ -393,7 +142,273 @@
 	
 	{
 		"model":"RecApp.Song",
+		"pk":11,
+		"fields":{
+			"title":"Dracula ",
+			"artist":"Castlevania",
+			"year":1994,
+			"genre":"Instrumental",
+			"url":"",
+			"audio_file":"Castlevania.mp3",
+			"image":"castlevania.jpg"
+		}
+	},
+	{
+		"model":"RecApp.Song",
+		"pk":12,
+		"fields":{
+			"title":"Crazy",
+			"artist":"Gnarls Barkley",
+			"year":2006,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=-N4jf6rtyuw",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":13,
+		"fields":{
+			"title":"Lean On",
+			"artist":"MØ ",
+			"year":2015,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=rn9AQoI7mYU",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":14,
+		"fields":{
+			"title":"Titanium",
+			"artist":"David Guetta",
+			"year":2011,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=JRfuAukYTKg",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":15,
+		"fields":{
+			"title":"Catch Me If You Can",
+			"artist":"Girls Generation",
+			"year":2015,
+			"genre":"EDM",
+			"url":"https://www.youtube.com/watch?v=NfzYlgO30do",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":16,
+		"fields":{
+			"title":"Immigrant Song",
+			"artist":"Led Zeppelin",
+			"year":1970,
+			"genre":"Rock",
+			"url":"https://www.youtube.com/watch?v=RlNhD0oS5pk",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":17,
+		"fields":{
+			"title":"Bohemian Rhapsody",
+			"artist":"Queen",
+			"year":1975,
+			"genre":"Rock",
+			"url":"https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":18,
+		"fields":{
+			"title":"Don't Stop Believin'",
+			"artist":"Journey",
+			"year":1981,
+			"genre":"Rock",
+			"url":"https://www.youtube.com/watch?v=1k8craCGpgs",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":19,
+		"fields":{
+			"title":"(Don't Fear) The Reaper",
+			"artist":"Blue Oyster Cult",
+			"year":1976,
+			"genre":"Rock",
+			"url":"https://www.youtube.com/watch?v=Dy4HA3vUv2c",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":20,
+		"fields":{
+			"title":"I Walk the Line",
+			"artist":"Johnny Cash",
+			"year":1957,
+			"genre":"Country",
+			"url":"https://www.youtube.com/watch?v=jh169rVMveA",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	
+	{
+		"model":"RecApp.Song",
+		"pk":21,
+		"fields":{
+			"title":"Lost Ones",
+			"artist":"Lauryn Hill",
+			"year":1998,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=NdNFFC0p7N4",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":22,
+		"fields":{
+			"title":"Stan",
+			"artist":"Eminem",
+			"year":2000,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=kt14c7sYTFA",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":23,
+		"fields":{
+			"title":"Humble",
+			"artist":"Kendrick Lamar",
+			"year":2017,
+			"genre":"Hiphop",
+			"url":"https://www.youtube.com/watch?v=tvTRZJ-4EyI",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":24,
+		"fields":{
+			"title":"Video Games",
+			"artist":"Lana Del Rey",
+			"year":2011,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=Yu9V3Phfsf8",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":25,
+		"fields":{
+			"title":"Pumped Up Kicks",
+			"artist":"Foster The People",
+			"year":2010,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=SDTZ7iX4vTQ",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":26,
+		"fields":{
+			"title":"Every Time the Sun Comes Up",
+			"artist":"Sharon Van Etten",
+			"year":2014,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=fDW-W2J84Hc",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":27,
+		"fields":{
+			"title":"Washing Machine Heart",
+			"artist":"Mitski",
+			"year":2018,
+			"genre":"Indie/Acoustic",
+			"url":"https://www.youtube.com/watch?v=3vjkh-acmTE",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":28,
+		"fields":{
+			"title":"I'd Rather Go Blind",
+			"artist":"Etta James",
+			"year":1968,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
 		"pk":29,
+		"fields":{
+			"title":"Happy",
+			"artist":"Pharrell Williams",
+			"year":2013,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":30,
 		"fields":{
 			"title":"Always Be My Baby",
 			"artist":"Mariah Carey",
@@ -407,7 +422,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":30,
+		"pk":31,
 		"fields":{
 			"title":"Call Me Maybe",
 			"artist":"Carly Rae Jepsen",
@@ -421,7 +436,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":31,
+		"pk":32,
 		"fields":{
 			"title":"Diamond",
 			"artist":"Rihanna",
@@ -435,7 +450,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":32,
+		"pk":33,
 		"fields":{
 			"title":"Royals",
 			"artist":"Lorde",
@@ -449,7 +464,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":33,
+		"pk":34,
 		"fields":{
 			"title":"Honey and I",
 			"artist":"HAIM",
@@ -463,7 +478,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":34,
+		"pk":35,
 		"fields":{
 			"title":"Electric Worm",
 			"artist":"Beastie Boys",
@@ -477,7 +492,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":35,
+		"pk":36,
 		"fields":{
 			"title":"New York",
 			"artist":"James Horner",
@@ -491,7 +506,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":36,
+		"pk":37,
 		"fields":{
 			"title":"Lonely (Instrumental Ver.)",
 			"artist":"B1A4",
@@ -503,7 +518,7 @@
 	
 	{
 		"model":"RecApp.Song",
-		"pk":37,
+		"pk":38,
 		"fields":{
 			"title":"Hush (Instrumental)",
 			"artist":"Miss A",
@@ -515,20 +530,7 @@
 		}
 	},
 	
-	{
-		"model":"RecApp.Song",
-		"pk":38,
-		"fields":{
-			"title":"Dracula ",
-			"artist":"Castlevania",
-			"year":1994,
-			"genre":"Instrumental",
-			"url":"",
-			"audio_file":"Castlevania.mp3",
-			"image":"castlevania.jpg"
-		}
-	},
-	
+
 	{
 		"model":"RecApp.Song",
 		"pk":39,
