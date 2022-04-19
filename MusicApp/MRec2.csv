@@ -1,155 +1,162 @@
-Age,Gender,Happy,Gloomy,Stressed,Relaxing,Energetic
-32,Male,Rock,Instrumental,Instrumental,Instrumental,Rock
-32,Female,Country,Instrumental,Rock,Instrumental,Instrumental
-32,Female,Hiphop,Blues,Pop,Instrumental,Rock
-32,Female,Hiphop,Blues,Pop,Instrumental,Rock
-17,Female,Pop,Indie/Acoustic,Country,Instrumental,EDM
-17,Female,Pop,Blues,Indie/Acoustic,Hiphop,Rock
-17,Female,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Rock
-18,Female,Pop,Rock,Country,Country,Rock
-18,Female,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Pop
-18,Prefer not to say,EDM,Rock,Indie/Acoustic,Indie/Acoustic,Pop
-18,Male,Rock,Blues,Instrumental,Hiphop,Rock
-17,Female,Pop,Pop,Pop,Pop,Pop
-21,Male,Pop,EDM,Country,Instrumental,Rock
-18,Female,Country,Pop,Pop,Country,Rock
-19,Female,Pop,Hiphop,Instrumental,Indie/Acoustic,EDM
-19,Female,Instrumental,Country,Indie/Acoustic,Blues,Rock
-18,Male,Indie/Acoustic,Instrumental,Blues,Instrumental,Pop
-23,Male,EDM,Instrumental,EDM,Instrumental,EDM
-32,Male,Pop,Rock,Country,Country,Pop
-32,Female,Pop,Pop,Pop,Pop,Pop
-32,Male,Rock,Pop,Rock,Country,Rock
-33,Male,Blues,Instrumental,Pop,Rock,Blues
-33,Male,Rock,Instrumental,Instrumental,Instrumental,Rock
-32,Female,Hiphop,Instrumental,Blues,Instrumental,Hiphop
-45,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
-30,Female,Pop,Instrumental,Rock,Instrumental,Rock
-30,Female,Pop,Indie/Acoustic,EDM,Country,Pop
-27,Male,Rock,Rock,Rock,Indie/Acoustic,EDM
-27,Female,Pop,Blues,Pop,Instrumental,Instrumental
-42,Female,Pop,Instrumental,Indie/Acoustic,Instrumental,Pop
-22,Female,Pop,Country,Rock,Indie/Acoustic,Hiphop
-24,Female,Pop,Instrumental,Hiphop,Hiphop,Hiphop
-24,Female,Pop,Country,Country,Indie/Acoustic,Hiphop
-21,Male,Pop,Pop,Pop,Pop,Pop
-22,Female,Rock,Indie/Acoustic,Blues,Instrumental,Pop
-22,Female,Indie/Acoustic,EDM,EDM,Blues,Rock
-23,Male,Pop,Country,Country,Rock,Pop
-33,Male,Pop,Rock,Instrumental,Country,Hiphop
-33,Male,Hiphop,Rock,Rock,Country,Hiphop
-31,Female,Rock,Country,Indie/Acoustic,Indie/Acoustic,Instrumental
-45,Female,Pop,Indie/Acoustic,Indie/Acoustic,Blues,Pop
-43,Female,Country,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Rock
-23,Female,Rock,Country,EDM,Indie/Acoustic,Hiphop
-21,Male,Pop,Instrumental,Blues,Pop,Pop
-28,Prefer not to say,Rock,Indie/Acoustic,Hiphop,Indie/Acoustic,Pop
-26,Male,Pop,Blues,EDM,Pop,Rock
-25,Female,Pop,Indie/Acoustic,Rock,Pop,Pop
-21,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,EDM
-19,Male,Pop,Hiphop,Pop,Pop,Hiphop
-22,Male,Country,Rock,Blues,Indie/Acoustic,Hiphop
-24,Female,Rock,Instrumental,Indie/Acoustic,Blues,Pop
-19,Male,Pop,Country,Hiphop,Country,Rock
-23,Female,Hiphop,Indie/Acoustic,Indie/Acoustic,Hiphop,Hiphop
-20,Female,EDM,Instrumental,Rock,Rock,EDM
-21,Female,Pop,Rock,Pop,Indie/Acoustic,Pop
-20,Female,Instrumental,Instrumental,Rock,Rock,Country
-26,Male,Pop,Country,Indie/Acoustic,Blues,EDM
-18,Female,Pop,Indie/Acoustic,Instrumental,Country,Rock
-23,Female,Hiphop,Blues,Pop,Indie/Acoustic,EDM
-21,Male,Pop,Country,Indie/Acoustic,Indie/Acoustic,Instrumental
-20,Female,Pop,Country,Country,Rock,Hiphop
-21,Prefer not to say,EDM,Indie/Acoustic,Rock,Indie/Acoustic,Rock
-19,Male,EDM,Rock,Rock,Pop,Rock
-37,Female,Pop,Indie/Acoustic,Pop,Instrumental,Hiphop
-21,Male,Hiphop,Rock,Instrumental,Indie/Acoustic,EDM
-20,Female,Pop,Indie/Acoustic,Indie/Acoustic,Instrumental,Blues
-20,Male,Pop,Country,Rock,Pop,Hiphop
-20,Male,Rock,Rock,Rock,Rock,Rock
-21,Female,Pop,Indie/Acoustic,Instrumental,Pop,Hiphop
-23,Female,Pop,Indie/Acoustic,Instrumental,Indie/Acoustic,Rock
-23,Female,Pop,Indie/Acoustic,Instrumental,Indie/Acoustic,Rock
-22,Female,Instrumental,Country,Indie/Acoustic,Instrumental,Country
-26,Male,Indie/Acoustic,Indie/Acoustic,Country,Country,Indie/Acoustic
-19,Male,Pop,Hiphop,Hiphop,Indie/Acoustic,Hiphop
-45,Male,Country,Indie/Acoustic,Rock,Indie/Acoustic,Hiphop
-43,Female,Country,Indie/Acoustic,Country,Instrumental,Country
-47,Male,Rock,Rock,Indie/Acoustic,Blues,Rock
-31,Female,Hiphop,Hiphop,Hiphop,Indie/Acoustic,EDM
-29,Female,Blues,Instrumental,Pop,Instrumental,EDM
-29,Female,Pop,Instrumental,Instrumental,Instrumental,Rock
-20,Male,Country,Country,Rock,Instrumental,Hiphop
-20,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
-30,Male,Pop,EDM,EDM,Country,Pop
-45,Female,Pop,Indie/Acoustic,Rock,Instrumental,Pop
-49,Male,Pop,Pop,Country,Instrumental,Pop
-47,Female,Pop,Rock,Indie/Acoustic,Indie/Acoustic,Instrumental
-37,Female,Rock,Indie/Acoustic,Indie/Acoustic,Pop,Rock
-33,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Hiphop
-39,Female,Hiphop,Indie/Acoustic,Rock,Instrumental,Rock
-42,Male,Pop,Rock,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic
-47,Female,Rock,Rock,Rock,Indie/Acoustic,Hiphop
-55,Female,Rock,Blues,Rock,Instrumental,Hiphop
-37,Female,EDM,EDM,EDM,EDM,EDM
-39,Female,Hiphop,Indie/Acoustic,Hiphop,Instrumental,Hiphop
-37,Male,Pop,Blues,Instrumental,Instrumental,Indie/Acoustic
-37,Female,Pop,Indie/Acoustic,Hiphop,Instrumental,Rock
-32,Male,Rock,Rock,Rock,Pop,Rock
-33,Female,Rock,Instrumental,Instrumental,Instrumental,Rock
-33,Female,Pop,Pop,Instrumental,Indie/Acoustic,Rock
-28,Female,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Rock
-36,Male,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
-39,Female,Indie/Acoustic,Rock,Rock,Blues,EDM
-24,Female,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Pop
-34,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
-30,Male,Rock,Pop,Pop,Rock,Pop
-18,Female,Rock,Instrumental,Pop,Pop,Hiphop
-23,Male,Instrumental,Instrumental,Instrumental,Instrumental,Hiphop
-20,Female,Pop,Indie/Acoustic,Rock,Pop,Pop
-24,Male,Pop,Pop,EDM,EDM,Rock
-32,Female,Country,Country,EDM,Country,Instrumental
-34,Male,Rock,Blues,Rock,EDM,Country
-19,Male,Pop,Pop,Country,Pop,Rock
-21,Female,Indie/Acoustic,Indie/Acoustic,Instrumental,Instrumental,Pop
-21,Male,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,EDM
-25,Female,Indie/Acoustic,Country,Indie/Acoustic,Indie/Acoustic,Hiphop
-19,Female,Pop,Rock,Rock,Instrumental,Pop
-24,Male,Pop,Indie/Acoustic,Indie/Acoustic,Instrumental,EDM
-21,Male,Pop,Rock,Rock,Pop,Hiphop
-33,Female,Country,Pop,Pop,Instrumental,Pop
-29,Male,Blues,Instrumental,Pop,Instrumental,Hiphop
-27,Female,Pop,Blues,Instrumental,Instrumental,EDM
-28,Male,Rock,Indie/Acoustic,Indie/Acoustic,Instrumental,Rock
-32,Female,Instrumental,Indie/Acoustic,Blues,Instrumental,Hiphop
-29,Male,Country,Blues,Rock,Country,Hiphop
-25,Female,Pop,Indie/Acoustic,Pop,Instrumental,Pop
-21,Male,Rock,Rock,Rock,Indie/Acoustic,Hiphop
-22,Male,Indie/Acoustic,Instrumental,Blues,EDM,Rock
-19,Male,Pop,EDM,EDM,Indie/Acoustic,Rock
-27,Male,Country,Rock,Rock,Indie/Acoustic,EDM
-31,Female,Blues,Country,Indie/Acoustic,Indie/Acoustic,Instrumental
-25,Male,Pop,Hiphop,Rock,Instrumental,EDM
-21,Male,Indie/Acoustic,Rock,Rock,Rock,Pop
-24,Male,Instrumental,Instrumental,Rock,Instrumental,Hiphop
-22,Male,Indie/Acoustic,Rock,Rock,Indie/Acoustic,Rock
-23,Female,Rock,Blues,Indie/Acoustic,Indie/Acoustic,Pop
-22,Female,Pop,Blues,Instrumental,Instrumental,Pop
-22,Female,Hiphop,Country,Hiphop,Country,Pop
-22,Female,Pop,Indie/Acoustic,Rock,Instrumental,Rock
-23,Female,Pop,Instrumental,Pop,Blues,Pop
-24,Female,Pop,Instrumental,Rock,Country,Hiphop
-23,Male,Instrumental,Indie/Acoustic,Indie/Acoustic,Pop,Blues
-21,Female,Pop,Indie/Acoustic,Instrumental,Instrumental,EDM
-22,Female,Hiphop,Instrumental,Indie/Acoustic,Indie/Acoustic,Pop
-21,Female,Indie/Acoustic,EDM,Instrumental,Rock,Pop
-22,Male,Instrumental,Hiphop,Indie/Acoustic,Instrumental,Rock
-21,Female,Pop,Country,Blues,Pop,Pop
-23,Female,Indie/Acoustic,Instrumental,Blues,Instrumental,EDM
-23,Male,EDM,Instrumental,Rock,Instrumental,Instrumental
-22,Female,Pop,Indie/Acoustic,Pop,Instrumental,EDM
-28,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Rock
-31,Female,Hiphop,Country,Country,Indie/Acoustic,Instrumental
-29,Male,Blues,Blues,Rock,Instrumental,Hiphop
-34,Female,Pop,Indie/Acoustic,Rock,Instrumental,Rock
-33,Male,Hiphop,Rock,Rock,Instrumental,Country
+Timestamp,State your age,State your Gender:,Check which genre of music you prefer during these moods: [Happy],Check which genre of music you prefer during these moods: [Gloomy],Check which genre of music you prefer during these moods: [Stressed],Check which genre of music you prefer during these moods: [Relaxing],Check which genre of music you prefer during these moods: [Energetic]
+4/15/2022 2:34:26,21,Female,Pop,Indie/Acoustic,Instrumental,Instrumental,Rock
+4/3/2022 22:12:11,44,Male,Rock,Instrumental,Instrumental,Indie/Acoustic,Rock
+4/3/2022 11:45:39,36,Female,Rock,Blues,Indie/Acoustic,Indie/Acoustic,Pop
+4/3/2022 8:54:51,37,Female,Pop,Blues,Instrumental,Instrumental,Rock
+4/3/2022 5:56:12,45,Male,Rock,Indie/Acoustic,Rock,Instrumental,Rock
+4/3/2022 5:38:18,39,Female,Hiphop,Rock,Hiphop,Country,Hiphop
+4/3/2022 4:22:03,50,Female,Rock,Rock,Rock,Rock,Rock
+3/21/2022 19:50:20,33,Male,Hiphop,Rock,Rock,Instrumental,Country
+3/21/2022 19:49:09,34,Female,Pop,Indie/Acoustic,Rock,Instrumental,Rock
+3/21/2022 19:47:41,29,Male,Blues,Blues,Rock,Instrumental,Hiphop
+3/21/2022 19:46:09,31,Female,Hiphop,Country,Country,Indie/Acoustic,Instrumental
+3/21/2022 19:43:23,28,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Rock
+3/21/2022 19:38:58,32,Male,Rock,Instrumental,Instrumental,Instrumental,Rock
+3/21/2022 19:38:23,32,Female,Country,Instrumental,Rock,Instrumental,Instrumental
+3/21/2022 0:28:55,32,Female,Hiphop,Blues,Pop,Instrumental,Rock
+3/21/2022 0:27:26,32,Female,Hiphop,Blues,Pop,Instrumental,Rock
+3/19/2022 8:23:14,17,Female,Pop,Indie/Acoustic,Country,Instrumental,EDM
+3/19/2022 0:57:58,17,Female,Pop,Blues,Indie/Acoustic,Hiphop,Rock
+3/18/2022 23:40:32,17,Female,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Rock
+3/18/2022 23:38:50,18,Female,Pop,Rock,Country,Country,Rock
+3/18/2022 23:36:39,18,Female,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Pop
+3/18/2022 23:35:58,18,Prefer not to say,EDM,Rock,Indie/Acoustic,Indie/Acoustic,Pop
+3/18/2022 23:35:11,18,Male,Rock,Blues,Instrumental,Hiphop,Rock
+3/18/2022 23:34:50,17,Female,Pop,Pop,Pop,Pop,Pop
+3/18/2022 23:31:37,21,Male,Pop,EDM,Country,Instrumental,Rock
+3/18/2022 23:18:42,18,Female,Country,Pop,Pop,Country,Rock
+3/18/2022 23:08:40,19,Female,Pop,Hiphop,Instrumental,Indie/Acoustic,EDM
+3/18/2022 22:37:55,19,Female,Instrumental,Country,Indie/Acoustic,Blues,Rock
+3/18/2022 22:37:37,18,Male,Indie/Acoustic,Instrumental,Blues,Instrumental,Pop
+3/17/2022 22:23:24,23,Male,EDM,Instrumental,EDM,Instrumental,EDM
+3/17/2022 21:48:16,32,Male,Pop,Rock,Country,Country,Pop
+3/17/2022 21:41:23,32,Female,Pop,Pop,Pop,Pop,Pop
+3/17/2022 21:40:25,32,Male,Rock,Pop,Rock,Country,Rock
+3/17/2022 21:40:03,33,Male,Blues,Instrumental,Pop,Rock,Blues
+3/17/2022 21:37:41,33,Male,Rock,Instrumental,Instrumental,Instrumental,Rock
+3/17/2022 21:36:47,32,Female,Hiphop,Instrumental,Blues,Instrumental,Hiphop
+3/11/2022 23:42:09,45,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
+3/11/2022 19:12:20,30,Female,Pop,Instrumental,Rock,Instrumental,Rock
+3/11/2022 19:11:35,30,Female,Pop,Indie/Acoustic,EDM,Country,Pop
+3/11/2022 19:10:04,27,Male,Rock,Rock,Rock,Indie/Acoustic,EDM
+3/11/2022 19:09:18,27,Female,Pop,Blues,Pop,Instrumental,Instrumental
+3/10/2022 18:46:55,42,Female,Pop,Instrumental,Indie/Acoustic,Instrumental,Pop
+3/10/2022 11:40:46,22,Female,Pop,Country,Rock,Indie/Acoustic,Hiphop
+3/10/2022 3:39:53,24,Female,Pop,Instrumental,Hiphop,Hiphop,Hiphop
+3/10/2022 2:16:17,24,Female,Pop,Country,Country,Indie/Acoustic,Hiphop
+3/10/2022 1:17:16,21,Male,Pop,Pop,Pop,Pop,Pop
+3/10/2022 0:39:11,22,Female,Rock,Indie/Acoustic,Blues,Instrumental,Pop
+3/9/2022 16:42:09,22,Female,Indie/Acoustic,EDM,EDM,Blues,Rock
+3/9/2022 5:05:51,23,Male,Pop,Country,Country,Rock,Pop
+3/9/2022 1:00:12,33,Male,Pop,Rock,Instrumental,Country,Hiphop
+3/9/2022 0:59:23,33,Male,Hiphop,Rock,Rock,Country,Hiphop
+3/9/2022 0:58:32,31,Female,Rock,Country,Indie/Acoustic,Indie/Acoustic,Instrumental
+3/9/2022 0:57:52,45,Female,Pop,Indie/Acoustic,Indie/Acoustic,Blues,Pop
+3/9/2022 0:57:03,43,Female,Country,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Rock
+3/8/2022 21:07:39,23,Female,Rock,Country,EDM,Indie/Acoustic,Hiphop
+3/8/2022 20:39:33,21,Male,Pop,Instrumental,Blues,Pop,Pop
+3/8/2022 20:07:55,28,Prefer not to say,Rock,Indie/Acoustic,Hiphop,Indie/Acoustic,Pop
+3/8/2022 19:58:09,26,Male,Pop,Blues,EDM,Pop,Rock
+3/8/2022 19:47:30,25,Female,Pop,Indie/Acoustic,Rock,Pop,Pop
+3/8/2022 18:24:44,21,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,EDM
+3/8/2022 18:13:17,19,Male,Pop,Hiphop,Pop,Pop,Hiphop
+3/8/2022 16:44:37,22,Male,Country,Rock,Blues,Indie/Acoustic,Hiphop
+3/8/2022 16:24:27,24,Female,Rock,Instrumental,Indie/Acoustic,Blues,Pop
+3/8/2022 15:41:16,19,Male,Pop,Country,Hiphop,Country,Rock
+3/8/2022 14:54:23,23,Female,Hiphop,Indie/Acoustic,Indie/Acoustic,Hiphop,Hiphop
+3/8/2022 14:43:08,20,Female,EDM,Instrumental,Rock,Rock,EDM
+3/8/2022 14:06:05,21,Female,Pop,Rock,Pop,Indie/Acoustic,Pop
+3/8/2022 12:59:26,20,Female,Instrumental,Instrumental,Rock,Rock,Country
+3/8/2022 11:58:01,26,Male,Pop,Country,Indie/Acoustic,Blues,EDM
+3/8/2022 9:38:13,18,Female,Pop,Indie/Acoustic,Instrumental,Country,Rock
+3/8/2022 9:27:18,23,Female,Hiphop,Blues,Pop,Indie/Acoustic,EDM
+3/8/2022 9:06:27,21,Male,Pop,Country,Indie/Acoustic,Indie/Acoustic,Instrumental
+3/8/2022 7:55:02,20,Female,Pop,Country,Country,Rock,Hiphop
+3/8/2022 5:20:03,21,Prefer not to say,EDM,Indie/Acoustic,Rock,Indie/Acoustic,Rock
+3/8/2022 2:30:20,19,Male,EDM,Rock,Rock,Pop,Rock
+3/8/2022 2:27:20,37,Female,Pop,Indie/Acoustic,Pop,Instrumental,Hiphop
+3/8/2022 2:02:51,21,Male,Hiphop,Rock,Instrumental,Indie/Acoustic,EDM
+3/8/2022 1:10:44,20,Female,Pop,Indie/Acoustic,Indie/Acoustic,Instrumental,Blues
+3/8/2022 0:37:59,20,Male,Pop,Country,Rock,Pop,Hiphop
+3/8/2022 0:35:03,20,Male,Rock,Rock,Rock,Rock,Rock
+3/8/2022 0:31:39,21,Female,Pop,Indie/Acoustic,Instrumental,Pop,Hiphop
+3/8/2022 0:25:58,23,Female,Pop,Indie/Acoustic,Instrumental,Indie/Acoustic,Rock
+3/8/2022 0:25:16,23,Female,Pop,Indie/Acoustic,Instrumental,Indie/Acoustic,Rock
+3/8/2022 0:15:54,22,Female,Instrumental,Country,Indie/Acoustic,Instrumental,Country
+3/8/2022 0:14:28,26,Male,Indie/Acoustic,Indie/Acoustic,Country,Country,Indie/Acoustic
+3/8/2022 0:13:10,19,Male,Pop,Hiphop,Hiphop,Indie/Acoustic,Hiphop
+3/6/2022 1:51:54,45,Male,Country,Indie/Acoustic,Rock,Indie/Acoustic,Hiphop
+3/6/2022 1:51:15,43,Female,Country,Indie/Acoustic,Country,Instrumental,Country
+3/6/2022 1:50:45,47,Male,Rock,Rock,Indie/Acoustic,Blues,Rock
+3/6/2022 1:48:05,31,Female,Hiphop,Hiphop,Hiphop,Indie/Acoustic,EDM
+3/6/2022 1:47:30,29,Female,Blues,Instrumental,Pop,Instrumental,EDM
+3/6/2022 1:46:18,29,Female,Pop,Instrumental,Instrumental,Instrumental,Rock
+3/6/2022 1:45:20,20,Male,Country,Country,Rock,Instrumental,Hiphop
+3/6/2022 1:45:02,20,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
+2/22/2022 8:29:04,30,Male,Pop,EDM,EDM,Country,Pop
+2/21/2022 10:44:43,45,Female,Pop,Indie/Acoustic,Rock,Instrumental,Pop
+2/21/2022 10:43:58,49,Male,Pop,Pop,Country,Instrumental,Pop
+2/21/2022 10:43:22,47,Female,Pop,Rock,Indie/Acoustic,Indie/Acoustic,Instrumental
+2/20/2022 15:42:44,37,Female,Rock,Indie/Acoustic,Indie/Acoustic,Pop,Rock
+2/20/2022 11:01:39,33,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Hiphop
+2/20/2022 0:40:09,39,Female,Hiphop,Indie/Acoustic,Rock,Instrumental,Rock
+2/19/2022 15:24:00,42,Male,Pop,Rock,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic
+2/19/2022 15:23:16,47,Female,Rock,Rock,Rock,Indie/Acoustic,Hiphop
+2/19/2022 4:07:20,55,Female,Rock,Blues,Rock,Instrumental,Hiphop
+2/19/2022 3:24:03,37,Female,EDM,EDM,EDM,EDM,EDM
+2/19/2022 2:54:06,39,Female,Hiphop,Indie/Acoustic,Hiphop,Instrumental,Hiphop
+2/19/2022 2:50:03,37,Male,Pop,Blues,Instrumental,Instrumental,Indie/Acoustic
+2/19/2022 2:18:43,37,Female,Pop,Indie/Acoustic,Hiphop,Instrumental,Rock
+2/19/2022 1:20:47,32,Male,Rock,Rock,Rock,Pop,Rock
+2/19/2022 1:20:22,33,Female,Rock,Instrumental,Instrumental,Instrumental,Rock
+2/19/2022 0:33:38,33,Female,Pop,Pop,Instrumental,Indie/Acoustic,Rock
+2/19/2022 0:28:00,28,Female,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Rock
+2/19/2022 0:14:38,36,Male,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
+2/19/2022 0:03:02,39,Female,Indie/Acoustic,Rock,Rock,Blues,EDM
+2/18/2022 23:51:08,24,Female,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,Pop
+2/18/2022 23:23:13,34,Female,Pop,Indie/Acoustic,Rock,Indie/Acoustic,Pop
+2/18/2022 23:10:52,30,Male,Rock,Pop,Pop,Rock,Pop
+2/18/2022 1:20:20,18,Female,Rock,Instrumental,Pop,Pop,Hiphop
+2/17/2022 22:53:16,23,Male,Instrumental,Instrumental,Instrumental,Instrumental,Hiphop
+2/17/2022 22:14:50,20,Female,Pop,Indie/Acoustic,Rock,Pop,Pop
+2/17/2022 21:03:18,24,Male,Pop,Pop,EDM,EDM,Rock
+2/17/2022 21:02:39,32,Female,Country,Country,EDM,Country,Instrumental
+2/17/2022 21:02:17,34,Male,Rock,Blues,Rock,EDM,Country
+2/17/2022 20:30:46,19,Male,Pop,Pop,Country,Pop,Rock
+2/17/2022 19:56:05,21,Female,Indie/Acoustic,Indie/Acoustic,Instrumental,Instrumental,Pop
+2/17/2022 19:50:19,21,Male,Pop,Indie/Acoustic,Indie/Acoustic,Indie/Acoustic,EDM
+2/17/2022 19:38:29,25,Female,Indie/Acoustic,Country,Indie/Acoustic,Indie/Acoustic,Hiphop
+2/17/2022 19:25:32,19,Female,Pop,Rock,Rock,Instrumental,Pop
+2/17/2022 19:25:29,24,Male,Pop,Indie/Acoustic,Indie/Acoustic,Instrumental,EDM
+2/17/2022 19:14:28,21,Male,Pop,Rock,Rock,Pop,Hiphop
+2/17/2022 2:46:06,33,Female,Country,Pop,Pop,Instrumental,Pop
+2/17/2022 2:45:41,29,Male,Blues,Instrumental,Pop,Instrumental,Hiphop
+2/16/2022 11:30:57,27,Female,Pop,Blues,Instrumental,Instrumental,EDM
+2/15/2022 22:20:16,28,Male,Rock,Indie/Acoustic,Indie/Acoustic,Instrumental,Rock
+2/15/2022 21:54:21,32,Female,Instrumental,Indie/Acoustic,Blues,Instrumental,Hiphop
+2/15/2022 21:29:05,29,Male,Country,Blues,Rock,Country,Hiphop
+2/15/2022 21:28:36,25,Female,Pop,Indie/Acoustic,Pop,Instrumental,Pop
+2/15/2022 21:27:51,21,Male,Rock,Rock,Rock,Indie/Acoustic,Hiphop
+2/14/2022 11:51:31,22,Male,Indie/Acoustic,Instrumental,Blues,EDM,Rock
+2/14/2022 11:47:20,19,Male,Pop,EDM,EDM,Indie/Acoustic,Rock
+2/14/2022 1:43:40,27,Male,Country,Rock,Rock,Indie/Acoustic,EDM
+2/14/2022 1:43:06,31,Female,Blues,Country,Indie/Acoustic,Indie/Acoustic,Instrumental
+2/14/2022 0:25:02,25,Male,Pop,Hiphop,Rock,Instrumental,EDM
+2/13/2022 19:06:00,21,Male,Indie/Acoustic,Rock,Rock,Rock,Pop
+2/13/2022 18:58:02,24,Male,Instrumental,Instrumental,Rock,Instrumental,Hiphop
+2/13/2022 18:03:37,22,Male,Indie/Acoustic,Rock,Rock,Indie/Acoustic,Rock
+2/13/2022 15:45:26,23,Female,Rock,Blues,Indie/Acoustic,Indie/Acoustic,Pop
+2/13/2022 15:27:00,22,Female,Pop,Blues,Instrumental,Instrumental,Pop
+2/13/2022 13:07:48,22,Female,Hiphop,Country,Hiphop,Country,Pop
+2/13/2022 12:49:37,22,Female,Pop,Indie/Acoustic,Rock,Instrumental,Rock
+2/13/2022 12:42:26,23,Female,Pop,Instrumental,Pop,Blues,Pop
+2/13/2022 12:23:25,24,Female,Pop,Instrumental,Rock,Country,Hiphop
+2/13/2022 12:17:10,23,Male,Instrumental,Indie/Acoustic,Indie/Acoustic,Pop,Blues
+2/13/2022 12:14:47,21,Female,Pop,Indie/Acoustic,Instrumental,Instrumental,EDM
+2/13/2022 12:14:33,22,Female,Hiphop,Instrumental,Indie/Acoustic,Indie/Acoustic,Pop
+2/13/2022 12:11:59,21,Female,Indie/Acoustic,EDM,Instrumental,Rock,Pop
+2/13/2022 12:09:29,22,Male,Instrumental,Hiphop,Indie/Acoustic,Instrumental,Rock
+2/13/2022 0:24:25,21,Female,Pop,Country,Blues,Pop,Pop
+2/13/2022 0:14:54,23,Female,Indie/Acoustic,Instrumental,Blues,Instrumental,EDM
+2/12/2022 23:49:09,23,Male,EDM,Instrumental,Rock,Instrumental,Instrumental
+2/12/2022 1:41:47,22,Female,Pop,Indie/Acoustic,Pop,Instrumental,EDM
