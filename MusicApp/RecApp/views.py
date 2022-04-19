@@ -226,3 +226,11 @@ def update_view(request, id):
     # add form dictionary to context
     context["form"] = form
     return render(request, "update_view.html", context)
+
+@login_required
+def password_change(request):
+    return render(request, 'password_change.html')
+
+
+def password_change_done(request):
+    return render(request, 'password_change_done.html')
