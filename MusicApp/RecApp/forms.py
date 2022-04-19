@@ -47,7 +47,7 @@ class AddSongToPlaylist(forms.ModelForm):
         self.fields['playlist'].required= True
         
 class PredictionForm(forms.Form):
-    mood = forms.TypedChoiceField(choices=[(1,'Happy'), (2,'Gloomy'), (3,'Stressed'), (4,'Relaxing'), (5,'Energetic')])
+    mood = forms.TypedChoiceField(choices=[(2,'Happy'), (1,'Gloomy'), (4,'Stressed'), (3,'Relaxing'), (0,'Energetic')])
     
 class UpdateUser(forms.ModelForm):
 
