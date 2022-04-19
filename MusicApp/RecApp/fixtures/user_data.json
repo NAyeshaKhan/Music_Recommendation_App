@@ -56,5 +56,27 @@
 			"age": 31,
 			"gender": "1"
 			}
+	},
+        {
+		"model": "RecApp.customuser", 
+		"pk": 6, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$7cxd5hHmY5CLLIkXuo00hU$qaqh5Uz89nzrPhFtALxaAuWrtIBe8yzFjIV8cNJFOLo=", 
+			"username": "John",
+			"email": "john@email.com",
+			"age": 37,
+			"gender": "0"
+			}
+	},
+        {
+		"model": "RecApp.customuser", 
+		"pk": 7, 
+		"fields": {
+			"password": "pbkdf2_sha256$260000$7cxd5hHmY5CLLIkXuo00hU$qaqh5Uz89nzrPhFtALxaAuWrtIBe8yzFjIV8cNJFOLo=", 
+			"username": "Jane",
+			"email": "jane@email.com",
+			"age": 18,
+			"gender": "1"
+			}
 	}
 ]
