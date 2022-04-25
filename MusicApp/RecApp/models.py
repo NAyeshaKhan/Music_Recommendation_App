@@ -39,3 +39,11 @@ class Song(models.Model):
             f"{self.title} - "
             f"{self.artist}"
         )
+
+
+class Rating(models.Model):
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
+    rating = models.IntegerField()
+
+    def __str__(self):
+        return self.rating
