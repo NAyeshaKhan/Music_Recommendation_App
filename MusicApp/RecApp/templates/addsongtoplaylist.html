@@ -12,12 +12,12 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="row  justify-content-center">
+			<div class="row justify-content-center">
 				<div class="col-sm-8">
 					<h4 class="page-header">Select playlist to add the song to:</h4>
 						<form action="" method="POST" autocomplete="off">
 							{% csrf_token %}
-							{{form.playlist|as_crispy_field}}
+								{{form.playlist|as_crispy_field}}
 							<button onclick="history.back()" class="btn btn-success">Go Back</button>
 							<button type="submit" class="btn btn-success">Add Song</button>
 						</form>

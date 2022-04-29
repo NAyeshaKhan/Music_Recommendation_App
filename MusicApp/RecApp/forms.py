@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from .models import CustomUser, Song
 from .models import Playlist
-
+from django.forms.widgets import CheckboxSelectMultiple
 
 # Create your forms here.
 
@@ -45,6 +45,7 @@ class AddSongToPlaylist(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super(AddSongToPlaylist,self).__init__(*args, **kwargs)
         self.fields['playlist'].required= True
+        self.fields["playlist"].widget = CheckboxSelectMultiple()
         
 class PredictionForm(forms.Form):
     mood = forms.TypedChoiceField(choices=[(2,'Happy'), (1,'Gloomy'), (4,'Stressed'), (3,'Relaxing'), (0,'Energetic')])

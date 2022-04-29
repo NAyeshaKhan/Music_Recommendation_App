@@ -159,13 +159,15 @@ def add_song(request,id):
     if request.method == "GET":
         form = AddSongToPlaylist()
         form.fields["playlist"].queryset=Playlist.objects.filter(user=request.user)
+        playlists=Playlist.objects.filter(user=request.user)
         return render(request,'addsongtoplaylist.html',{'form':form})
     else:
         form = AddSongToPlaylist(request.POST)
         if form.is_valid():
             song=Song.objects.get(pk=id)
             playlist=form.cleaned_data.get('playlist')
-            song.playlist.add(playlist[0].id)
+            for play in playlist:
+                song.playlist.add(play.id)
             return redirect('/playlist')
             
 @login_required
