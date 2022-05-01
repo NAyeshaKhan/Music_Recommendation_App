@@ -157,11 +157,11 @@
 		"model":"RecApp.Song",
 		"pk":12,
 		"fields":{
-			"title":"Crazy",
-			"artist":"Gnarls Barkley",
-			"year":2006,
+			"title":"thank u, next",
+			"artist":"Ariana Grande",
+			"year":2019,
 			"genre":"Pop",
-			"url":"https://www.youtube.com/watch?v=-N4jf6rtyuw",
+			"url":"https://www.youtube.com/watch?v=gl1aHhXnN1k",
 			"audio_file":"",
 			"image":""
 		}
@@ -549,10 +549,290 @@
 		"model":"RecApp.Song",
 		"pk":40,
 		"fields":{
-			"title":"Marble Machine ",
+			"title":"Marble Machine",
 			"artist":"Wintergatan",
 			"year":2016,
 			"genre":"Instrumental",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":41,
+		"fields":{
+			"title":"Love In Vain Blues",
+			"artist":"Robert Johnson",
+			"year":1937,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=-BkPm8JIJJQ",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":42,
+		"fields":{
+			"title":"I'd Rather Go Blind",
+			"artist":"Etta James",
+			"year":1968,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=u9sq3ME0JHQ",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":43,
+		"fields":{
+			"title":"It Hurts Me Too",
+			"artist":"Elmore James",
+			"year":1957,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=fzr1Rfn-P4Y",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":44,
+		"fields":{
+			"title":"Slow Blues",
+			"artist":"Buddy Guy",
+			"year":1998,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=4RoL-U6c3bc",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":45,
+		"fields":{
+			"title":"Texas Blues History",
+			"artist":"Blind Lemon Jefferson",
+			"year":1927,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=i3GEDqkJeVs",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":46,
+		"fields":{
+			"title":"Boom, Boom Out Goes the Lights",
+			"artist":"Little Walter",
+			"year":1957,
+			"genre":"Blues",
+			"url":"https://www.youtube.com/watch?v=XagQ3owbBEM",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":47,
+		"fields":{
+			"title":"Toxic",
+			"artist":"Britney Spears",
+			"year":2003,
+			"genre":"Pop",
+			"url":"https://www.youtube.com/watch?v=LOZuxwVk7TU",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":48,
+		"fields":{
+			"title":"drivers license",
+			"artist":"Olivia Rodrigo",
+			"year":2021,
+			"genre":"Indie/Acoustic",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":49,
+		"fields":{
+			"title":"Crazy In Love",
+			"artist":"Beyoncé",
+			"year":2003,
+			"genre":"Pop",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":50,
+		"fields":{
+			"title":"Good As Hell",
+			"artist":"Lizzo",
+			"year":2016,
+			"genre":"Hiphop",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":51,
+		"fields":{
+			"title":"Juice",
+			"artist":"Lizzo",
+			"year":2019,
+			"genre":"Pop",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":52,
+		"fields":{
+			"title":"Stand By Your Man",
+			"artist":"Tammy Wynette",
+			"year":1968,
+			"genre":"Country",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":53,
+		"fields":{
+			"title":"Strawberry Wine",
+			"artist":"Deana Carter",
+			"year":1996,
+			"genre":"Country",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":54,
+		"fields":{
+			"title":"Need You Now",
+			"artist":"Lady Antebellum",
+			"year":2009,
+			"genre":"Country",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":55,
+		"fields":{
+			"title":"Midnight City",
+			"artist":"M83",
+			"year":2011,
+			"genre":"Instrumental",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":56,
+		"fields":{
+			"title":"Chasing Cars",
+			"artist":"Snow Patrol",
+			"year":2006,
+			"genre":"Indie/Acoustic",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":57,
+		"fields":{
+			"title":"Everything Is Embarrassing",
+			"artist":"Sky Ferreira",
+			"year":2013,
+			"genre":"Indie/Acoustic",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":58,
+		"fields":{
+			"title":"Be Sweet",
+			"artist":"Japanese Breakfast",
+			"year":2021,
+			"genre":"Indie/Acoustic",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":59,
+		"fields":{
+			"title":"Midnight City",
+			"artist":"M83",
+			"year":2011,
+			"genre":"Instrumental",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":60,
+		"fields":{
+			"title":"Tim McGraw",
+			"artist":"Taylor Swift",
+			"year":2006,
+			"genre":"Country",
 			"url":"https://youtu.be/IvUU8joBb1Q",
 			"audio_file":"",
 			"image":""

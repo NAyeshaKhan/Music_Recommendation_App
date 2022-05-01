@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path,include
+from django import urls
 from . import views
 from rest_framework import routers
 from .views import SearchResultsView
@@ -7,6 +8,8 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
+#from django.contrib.auth.views import PasswordChangeDoneView,PasswordChangeView, PasswordResetDoneView
+
 
 app_name = "RecApp"
 router = routers.DefaultRouter()
@@ -29,22 +32,17 @@ urlpatterns = [
     path('playlist_view/<int:id>/', views.playlist_view, name="playlistview"),
     path('song_delete_playlist/<int:sid>/', views.song_delete_playlist, name="song_delete_playlist"),
     path('update/<int:id>', views.update_view ),
-    path('reset_password/', auth_views.PasswordResetView.as_view(template_name="password_reset.html"),
-         name="reset_password"),
-    path('reset_password_sent/',
-         auth_views.PasswordResetDoneView.as_view(template_name="RecApp/password_reset_sent.html"),
-         name="password_reset_done"),
-    path('reset/<uidb64>/<token>/',
-         auth_views.PasswordResetConfirmView.as_view(template_name="password_reset_form.html"),
-         name="password_reset_confirm"),
-    path('reset_password_complete/',
-         auth_views.PasswordResetCompleteView.as_view(template_name="password_reset_done.html"),
-         name="password_reset_complete"),
-    path('password_change/', auth_views.PasswordChangeView.as_view(template_name='password_change.html'),
-         name='password_change'),
-
-    path('password_change_done/', auth_views.PasswordChangeDoneView.as_view(template_name='password_change_done.html'),
-         name='password_change_done'),
+    
+    path('accounts/', include('django.contrib.auth.urls')),
+    path(
+        'password_change/',
+        auth_views.PasswordChangeView.as_view(template_name='RecApp/password_change.html'),
+    ),
+    path(
+        'RecApp/password_change/done/',
+        auth_views.PasswordChangeDoneView.as_view(template_name='RecApp/password_change_done.html'),
+    ),
+    
 ]
 
 urlpatterns += staticfiles_urlpatterns()

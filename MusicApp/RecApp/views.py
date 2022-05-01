@@ -48,7 +48,7 @@ def myform(request):
             result = predict(df)
             result=result[0]
             song_list=Song.objects.filter(genre = result).order_by('?')[:5]
-            return render(request, 'status.html', {"data": result,"songs":song_list}) 
+            return render(request, 'genre.html', {"data": result,"songs":song_list}) 
             
     form=PredictionForm()
     return render(request, 'form.html', {'form':form})
