@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
-from .forms import CustomUserCreationForm , PlaylistCreateForm, AddSongToPlaylist, UpdateUser
+from .forms import CustomUserCreationForm , PlaylistCreateForm, AddSongToPlaylist, RateRecommendationForm, UpdateUser
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
@@ -195,6 +195,19 @@ def songplayer(request):
     page_obj = paginator.get_page(page_number)
     context={"page_obj":page_obj}
     return render(request,"songplayer.html",context)
+
+@login_required
+def add_rating(request):
+	if request.method == "GET":
+		form = RateRecommendationForm()
+		return render(request,'ratings.html',{'form':form})
+	else:
+		form = RateRecommendationForm(request.POST)
+		if form.is_valid():
+			rating=form.save(commit=False)
+			rating.user = request.user
+			rating.save()
+			return redirect('/form')
 
 
 class SearchResultsView(ListView):

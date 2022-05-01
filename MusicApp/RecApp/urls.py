@@ -32,7 +32,7 @@ urlpatterns = [
     path('playlist_view/<int:id>/', views.playlist_view, name="playlistview"),
     path('song_delete_playlist/<int:sid>/', views.song_delete_playlist, name="song_delete_playlist"),
     path('update/<int:id>', views.update_view ),
-    
+
     path('accounts/', include('django.contrib.auth.urls')),
     path(
         'password_change/',
@@ -42,7 +42,7 @@ urlpatterns = [
         'RecApp/password_change/done/',
         auth_views.PasswordChangeDoneView.as_view(template_name='RecApp/password_change_done.html'),
     ),
-    
+    path('rating/', views.add_rating, name="rating" ),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

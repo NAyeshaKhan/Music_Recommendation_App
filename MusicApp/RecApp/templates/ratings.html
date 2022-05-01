@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+<head>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+
+{% block content %}	
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="row">
+				<div class="col-sm-8">
+					<h4 class="page-header">Rate the recommendation:</h4>
+						<form action="" method="POST" autocomplete="off">
+							{% csrf_token %}
+							{{form.as_p}}
+							<button onclick="history.back()" class="btn btn-primary">Go Back</button>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+				</div>
+			</div>
+		</div>
+	</div>	
+{% endblock content %}
+</body>

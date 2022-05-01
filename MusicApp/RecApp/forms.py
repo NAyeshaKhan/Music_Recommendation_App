@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
-from .models import CustomUser, Song
+from .models import CustomUser, Rating, Song
 from .models import Playlist
 from django.forms.widgets import CheckboxSelectMultiple, Select
 
@@ -46,6 +46,18 @@ class AddSongToPlaylist(forms.ModelForm):
         super(AddSongToPlaylist,self).__init__(*args, **kwargs)
         self.fields['playlist'].required= True
         self.fields["playlist"].widget = CheckboxSelectMultiple()
+
+class RateRecommendationForm(forms.ModelForm):
+
+    class Meta:
+        model = Rating
+        fields = ('rating',)
+        
+    rating = forms.TypedChoiceField(choices=[(1, '1'), (2, '2'), (3, '3'), (4, '4'), (5, '5')])
+    
+    def __init__(self, *args, **kwargs):
+        super(RateRecommendationForm,self).__init__(*args, **kwargs)
+        self.fields['rating'].required= True
         
 class PredictionForm(forms.Form):
     mood = forms.TypedChoiceField(choices=[(2,'Happy'), (1,'Gloomy'), (4,'Stressed'), (3,'Relaxing'), (0,'Energetic')])
