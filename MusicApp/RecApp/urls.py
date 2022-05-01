@@ -29,6 +29,7 @@ urlpatterns = [
     path('playlist_view/<int:id>/', views.playlist_view, name="playlistview"),
     path('song_delete_playlist/<int:sid>/', views.song_delete_playlist, name="song_delete_playlist"),
     path('update/<int:id>', views.update_view ),
+    path('rating/', views.add_rating, name="rating" ),
     path('reset_password/', auth_views.PasswordResetView.as_view(template_name="password_reset.html"),
          name="reset_password"),
     path('reset_password_sent/',
