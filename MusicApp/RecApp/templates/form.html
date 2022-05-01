@@ -10,29 +10,30 @@
 </head>
 
 {% block content %}	
+
 <body>
-	
-	<div class="container" style=" width: 100%; margin-left : 15%">
+	<div class="container">
 		<div class="row">
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-sm-8">
 					<h4 class="page-header">Get song recommendations by entering your mood:</h4>
 						<form method='POST' style="margin: 0 auto;">
 							{% csrf_token %}
-							<label for="Mood"> How are you feeling? </label>
+							<h5 class="page-header">How are you feeling?</h2>
 							<div class="input-group mb-2">
 								<div class="input-group-append">
 									<span class="input-group-text"><i class="fas fa-cloud-sun"></i></span>
 								</div>
 								{{form.mood}}
 							</div>
+							<br>
 							<button type="submit"  class="btn btn-primary">Submit</button>
 							
 						</form>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 {% endblock content %}
 </body>
 
