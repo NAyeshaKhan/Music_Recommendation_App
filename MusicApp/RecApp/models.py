@@ -46,4 +46,7 @@ class Rating(models.Model):
     rating = models.IntegerField()
 
     def __str__(self):
-        return self.rating
+        return (
+            f"{self.user} - "
+            f"{self.rating}"
+        )

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomUser, Playlist, Song
+from .models import CustomUser, Playlist, Song, Rating
 from django.contrib.auth.admin import UserAdmin
 from .forms import CustomUserCreationForm
 
@@ -26,6 +26,7 @@ class CustomUserAdmin(UserAdmin):
 admin.site.register(CustomUser, CustomUserAdmin)
 admin.site.register(Playlist)
 admin.site.register(Song)
+admin.site.register(Rating)
 
 
 
