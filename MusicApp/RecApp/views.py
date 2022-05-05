@@ -12,7 +12,7 @@ from django.conf import settings
 from django.core.paginator import Paginator
 
 from .forms import PredictionForm 
-from rest_framework import viewsets 
+from rest_framework import viewsets
 from rest_framework.decorators import api_view 
 from django.core import serializers 
 from rest_framework.response import Response 
@@ -49,7 +49,7 @@ def myform(request):
             result=result[0]
             song_list=Song.objects.filter(genre = result).order_by('?')[:5]
             return render(request, 'genre.html', {"data": result,"songs":song_list}) 
-            
+        
     form=PredictionForm()
     return render(request, 'form.html', {'form':form})
     
@@ -199,17 +199,16 @@ def songplayer(request):
 
 @login_required
 def add_rating(request):
-	if request.method == "GET":
-		form = RateRecommendationForm()
-		return render(request,'ratings.html',{'form':form})
-	else:
-		form = RateRecommendationForm(request.POST)
-		if form.is_valid():
-			rating=form.save(commit=False)
-			rating.user = request.user
-			rating.save()
-			return redirect('/form')
-
+    if request.method == "GET":
+        form = RateRecommendationForm()
+        return render(request,'ratings.html',{'form':form})
+    else:
+        form = RateRecommendationForm(request.POST)
+        if form.is_valid():
+            rating=form.save(commit=False)
+            rating.user = request.user
+            rating.save()
+            return redirect(request.META.get('HTTP_REFERER'))
 
 class SearchResultsView(ListView):
     model = Song

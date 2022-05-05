@@ -15,10 +15,10 @@
 			<div class="row">
 				<div class="col-sm-8">
 					<h4 class="page-header">Rate the recommendation:</h4>
-						<form action="" method="POST" autocomplete="off">
+						<form action="./?next={{ request.META.HTTP_REFERER }}" method="post">
 							{% csrf_token %}
 							{{form.as_p}}
-							<button onclick="history.back()" class="btn btn-primary">Go Back</button>
+							<button onclick="history.back()" class="btn btn-primary">Go Back to Add Songs</button>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
 				</div>
