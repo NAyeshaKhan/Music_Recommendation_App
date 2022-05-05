@@ -5,9 +5,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
-from .models import CustomUser, Playlist, Song  
+from .models import CustomUser, Playlist, Rating, Song  
 from django.views.generic import ListView
-from django.db.models import Q
+from django.db.models import Q, Avg
 from django.conf import settings
 from django.core.paginator import Paginator
 
@@ -129,7 +129,8 @@ def logout_request(request):
 
 @login_required
 def dashboard(request):
-    return render(request, 'dashboard.html')
+    avg_rating= Rating.objects.filter(user=request.user).aggregate(Avg('rating'))
+    return render(request, 'dashboard.html',{'avg_rating':avg_rating})
 
 @login_required
 def playlist_read(request):
