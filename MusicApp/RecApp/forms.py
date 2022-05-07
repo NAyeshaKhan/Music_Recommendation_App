@@ -53,7 +53,7 @@ class RateRecommendationForm(forms.ModelForm):
         model = Rating
         fields = ('rating',)
         
-    rating = forms.TypedChoiceField(choices=[(1, 'Poor'), (2, 'Inefficient'), (3, 'Adequate'), (4, 'Efficient'), (5, 'Excellent')])
+    rating = forms.TypedChoiceField(choices=[(1, 'Poor'), (2, 'Inaccurate'), (3, 'Adequate'), (4, 'Good'), (5, 'Excellent')])
     
     def __init__(self, *args, **kwargs):
         super(RateRecommendationForm,self).__init__(*args, **kwargs)

@@ -18,9 +18,10 @@
 						<form action="./?next={{ request.META.HTTP_REFERER }}" method="post">
 							{% csrf_token %}
 							{{form.as_p}}
-							<button onclick="history.back()" class="btn btn-primary">Go Back to Add Songs</button>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</form>
+						<br>
+						<button onclick="history.back()" class="btn btn-primary">Go Back to Add Songs</button>
 				</div>
 			</div>
 		</div>
