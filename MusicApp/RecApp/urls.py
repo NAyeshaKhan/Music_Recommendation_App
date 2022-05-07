@@ -43,6 +43,7 @@ urlpatterns = [
         auth_views.PasswordChangeDoneView.as_view(template_name='RecApp/password_change_done.html'),
     ),
     path('rating/', views.add_rating, name="rating" ),
+    path('song_details/<int:sid>/', views.song_details, name='song_details'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
