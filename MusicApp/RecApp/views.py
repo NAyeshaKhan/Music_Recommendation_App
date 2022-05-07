@@ -249,3 +249,12 @@ def password_change(request):
 
 def password_change_done(request):
     return render(request, 'password_change_done.html')
+
+
+@login_required
+def song_details(request, sid):
+    paginator = Paginator(Song.objects.filter(pk=sid), 1)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {"page_obj": page_obj}
+    return render(request, 'song_details.html', context)
