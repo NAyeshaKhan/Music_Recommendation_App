@@ -23,7 +23,7 @@
 						<div class="media">
 							<div class="media-left">
 								<figure class="image is-48x48">
-								  <img src="https://img.icons8.com/material/48/000000/musical-notes--v1.png"/>
+								 <img alt="" src="{% if s.image %}{{s.image.url}} {% else %}{{'https://img.icons8.com/material/48/000000/musical-notes--v1.png'}} {% endif %}"/>
 								</figure>
 							</div>
 							<div class="media-content">
@@ -32,6 +32,13 @@
 									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
 								</div>
 							</div>
+							
+							<form action="{% url 'RecApp:song_details' s.id%}" method="GET">
+		                                         {% csrf_token %}
+								<button type="submit" class="btn">
+							<i class="fas fa-play fa-lg  float-middle"></i></button>
+							</form>
+							
 							<form action="{% url 'RecApp:addsongtoplaylist' s.id %}" method="GET">
 								{% csrf_token %}
 								<button type="submit" class="btn">
