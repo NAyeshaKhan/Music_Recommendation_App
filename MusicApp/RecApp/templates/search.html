@@ -27,7 +27,7 @@
 									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
 								</div>
 							</div>
-							<form action="{% url 'RecApp:song_details' s.id%}" method="GET">
+							<form action="{% url 'RecApp:play_songs' s.id%}" method="GET">
 		                                               {% csrf_token %}
 								<button type="submit" class="btn">
 							<i class="fas fa-play fa-lg  float-middle"></i></button>
