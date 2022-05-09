@@ -36,7 +36,7 @@
 			"year":2020,
 			"genre":"Pop",
 			"url":"https://www.youtube.com/watch?v=4NRXx6U8ABQ",
-			"audio_file":"",
+			"audio_file":"Blinding_Lights",
 			"image":""
 		}
 	},
@@ -102,12 +102,12 @@
 		"model":"RecApp.Song",
 		"pk":8,
 		"fields":{
-			"title":"Nice For What",
-			"artist":"Drake",
+			"title":"Juice",
+			"artist":"Lizzo",
 			"year":2018,
 			"genre":"Hiphop",
-			"url":"https://www.youtube.com/watch?v=U9BwWKXjVaI",
-			"audio_file":"",
+			"url":"",
+			"audio_file":"Juice.mp3",
 			"image":""
 		}
 	},

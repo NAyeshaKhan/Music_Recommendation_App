@@ -175,7 +175,8 @@ def add_song(request,id):
 def playlist_view(request,id):
     queryset = Song.objects.filter(playlist__pk=id)
     context = {
-        "object_list": queryset
+        "object_list": queryset,
+        "pl":id
     }
     request.session['pid'] = id
     return render(request, "playlist_view.html", context)
@@ -188,14 +189,6 @@ def song_delete_playlist(request,sid):
     song.save()
     del request.session['pid']
     return playlist_view(request,pid)
-
-@login_required
-def songplayer(request):
-    paginator= Paginator(Song.objects.all(),1)
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    context={"page_obj":page_obj}
-    return render(request,"songplayer.html",context)
 
 @login_required
 def add_rating(request):
@@ -253,8 +246,16 @@ def password_change_done(request):
 
 @login_required
 def song_details(request, sid):
-    paginator = Paginator(Song.objects.filter(pk=sid), 1)
+    paginator = Paginator(Song.objects.filter(playlist=sid), 1)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     context = {"page_obj": page_obj}
-    return render(request, 'song_details.html', context)
+    return render(request, 'songplayer.html', context)
+
+@login_required
+def songplayer(request):
+    paginator= Paginator(Song.objects.all(),1)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context={"page_obj":page_obj}
+    return render(request,"songplayer.html",context)
