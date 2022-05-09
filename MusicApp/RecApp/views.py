@@ -245,7 +245,7 @@ def password_change_done(request):
 
 
 @login_required
-def song_details(request, sid):
+def play_playlists(request, sid):
     paginator = Paginator(Song.objects.filter(playlist=sid), 1)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
@@ -259,3 +259,14 @@ def songplayer(request):
     page_obj = paginator.get_page(page_number)
     context={"page_obj":page_obj}
     return render(request,"songplayer.html",context)
+
+
+@login_required
+def play_songs(request, sid):
+    paginator = Paginator(Song.objects.filter(pk=sid), 1)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    context = {"page_obj": page_obj}
+    return render(request, 'play_songs.html', context)
+
+
