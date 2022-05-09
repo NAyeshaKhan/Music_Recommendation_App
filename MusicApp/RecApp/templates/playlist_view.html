@@ -27,10 +27,10 @@
 									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
 								</div>
 							</div>
-							<form action="{% url 'RecApp:song_details' s.id%}" method="GET">
-		                                         {% csrf_token %}
+							<form action="{% url 'RecApp:play_playlists' s.id%}" method="GET">
+		                        {% csrf_token %}
 								<button type="submit" class="btn">
-							<i class="fas fa-play fa-lg  float-middle"></i></button>
+								<i class="fas fa-play fa-lg  float-middle"></i></button>
 							</form>
 							
 							<form action="{% url 'RecApp:song_delete_playlist' s.id%}" method="post", onsubmit="return confirm('Are you sure you want to delete the song from playlist?')">
