@@ -11,6 +11,12 @@
 		<div class="media-content">
 			<span class="title is-5">Playlist Songs:</span>
 		</div>
+		<div>
+			<a href="{% url 'RecApp:play_playlists' pl %}">
+				<button type="submit" class="btn btn-primary">Play All</button>
+			</a>
+		</div>
+		<br>
 		{% for s in object_list %}
 			<div class="block">
 				 <div class="card">
@@ -27,12 +33,6 @@
 									<span class="is-small has-text-grey-light">{{ s.artist }}</span>
 								</div>
 							</div>
-							<form action="{% url 'RecApp:play_playlists' s.id%}" method="GET">
-		                        {% csrf_token %}
-								<button type="submit" class="btn">
-								<i class="fas fa-play fa-lg  float-middle"></i></button>
-							</form>
-							
 							<form action="{% url 'RecApp:song_delete_playlist' s.id%}" method="post", onsubmit="return confirm('Are you sure you want to delete the song from playlist?')">
 								{% csrf_token %}
 								<button type="submit" class="btn">
