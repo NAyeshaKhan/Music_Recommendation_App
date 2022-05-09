@@ -36,8 +36,8 @@
 			"year":2020,
 			"genre":"Pop",
 			"url":"https://www.youtube.com/watch?v=4NRXx6U8ABQ",
-			"audio_file":"Blinding_Lights",
-			"image":""
+			"audio_file":"Blinding_Lights.mp3",
+			"image":"wknd.png"
 		}
 	},
 	
@@ -108,7 +108,7 @@
 			"genre":"Hiphop",
 			"url":"",
 			"audio_file":"Juice.mp3",
-			"image":""
+			"image":"lizzo1.png"
 		}
 	},
 	
@@ -833,6 +833,34 @@
 			"artist":"Taylor Swift",
 			"year":2006,
 			"genre":"Country",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":61,
+		"fields":{
+			"title":"Everybody Wants To Rule The World",
+			"artist":"Tears For Fears",
+			"year":1980,
+			"genre":"Rock",
+			"url":"https://youtu.be/IvUU8joBb1Q",
+			"audio_file":"",
+			"image":""
+		}
+	},
+	
+	{
+		"model":"RecApp.Song",
+		"pk":62,
+		"fields":{
+			"title":"Hotel California",
+			"artist":"Eagles",
+			"year":1981,
+			"genre":"Rock",
 			"url":"https://youtu.be/IvUU8joBb1Q",
 			"audio_file":"",
 			"image":""
