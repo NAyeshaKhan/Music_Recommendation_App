@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+<head>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+
+{% block content %}
+<head>
+	<title>Add Song</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="{% static 'css/register_base.css' %}" rel="stylesheet" />
+</head>
+<body style="background-color:white;">
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="user_card">
+			<h4 class="page-header">Select playlist to add song to:</h4>
+				<div class="d-flex justify-content-center">
+					<div class="d-flex justify-content-center form_container">
+						<form action="" method="POST" autocomplete="off">
+							{% csrf_token %}
+								{{form.playlist|as_crispy_field}}
+								<button onclick="history.back()" class="btn btn-success">Go Back</button>
+								<button type="submit" class="btn btn-success">Add Song</button>
+						</form>
+					</div>
+				<div class="mt-4">
+					<div class="d-flex justify-content-center links"></a>.</p></div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+</body>
+
+</html>
+

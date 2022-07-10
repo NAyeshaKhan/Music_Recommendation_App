@@ -18,6 +18,7 @@
 						<form action="" method="POST" autocomplete="off">
 							{% csrf_token %}
 								{{form.playlist|as_crispy_field}}
+							<br>
 							<button onclick="history.back()" class="btn btn-success">Go Back</button>
 							<button type="submit" class="btn btn-success">Add Song</button>
 						</form>
